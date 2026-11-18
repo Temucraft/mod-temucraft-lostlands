@@ -1,0 +1,62 @@
+[worldserver]
+
+########################################
+# mod-temucraft-lostlands
+########################################
+#
+#    Temucraft.LostLands.Enable
+#        Description: Run the module's scripted features (the creatures, items and quests are SQL and need nothing).
+#        Default:     1
+
+Temucraft.LostLands.Enable = 1
+
+#
+#    Temucraft.LostLands.Illusions
+#        Description: Illusion toys turn you into a random form from mod_temucraft_lostlands_illusion. Cast again,
+#                     mount or enter combat to drop it.
+#        Default:     1
+
+Temucraft.LostLands.Illusions = 1
+
+#
+#    Temucraft.LostLands.AccountWideCollections
+#        Description: Toys, mounts and companions from mod_temucraft_lostlands_collection, once learned, are taught to
+#                     every character of the account at login.
+#        Default:     1
+
+Temucraft.LostLands.AccountWideCollections = 1
+
+#
+#    Temucraft.LostLands.SpawnScale
+#        Description: Give objects listed in mod_temucraft_lostlands_spawn_scale their size.
+#        Default:     1
+
+Temucraft.LostLands.SpawnScale = 1
+
+#
+#    Temucraft.LostLands.CastObjectives
+#        Description: Quest objectives done by hitting another player with a spell (mod_temucraft_lostlands_quest_cast).
+#        Default:     1
+
+Temucraft.LostLands.CastObjectives = 1
+
+#
+#    Temucraft.LostLands.MapAuraRemoval
+#        Description: Remove the auras in mod_temucraft_lostlands_map_aura_removal when a player enters that map.
+#        Default:     1
+
+Temucraft.LostLands.MapAuraRemoval = 1
+
+#
+#    Temucraft.LostLands.RestRadius
+#        Description: Yards around a tent or campfire (go_temucraft_lostlands_rest) within which rested experience builds.
+#        Default:     10
+
+Temucraft.LostLands.RestRadius = 10
+
+#
+#    Temucraft.LostLands.RestRate
+#        Description: Rested experience added per second near a tent, as a share of the level's experience.
+#        Default:     0.000575
+
+Temucraft.LostLands.RestRate = 0.000575
