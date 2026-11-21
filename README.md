@@ -122,6 +122,11 @@ the `extra-maps` client patch and need map, vmap and mmap extraction; without th
 - Three objectives of "The Icy Menace" needed specific players of the original server: that quest can't be finished.
 - Stats were converted from flat values to AzerothCore's modifiers (health, mana, armor, damage), so numbers are close
   but not exact.
+- Companion spells came over with the 1.12 critter-summon effect (97, CAST_BUTTON in 3.3.5). 118 of them that summon a
+  Lost Lands creature now use the 3.3.5 companion form (effect 28, SummonProperties 41) in the server SQL and in patch-R
+  (`tools/fix_companion_spells.py`). 34 more (spells 1201623-1201656: Son of Mergothid, crocolisk hatchlings, baby
+  elekks, Wolpertinger and others) point at creatures 37020-37072 that were never imported (in 3.3.5 those ids are
+  Icecrown NPCs), so they still summon nothing until those creatures are made.
 
 ## Texts and translations
 

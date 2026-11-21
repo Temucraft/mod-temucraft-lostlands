@@ -22126,3 +22126,8 @@ INSERT INTO `factiontemplate_dbc` (`ID`,`Faction`,`Flags`,`FactionGroup`,`Friend
 (3044,2320,1,0,0,0,1007,910,531,1009,0,0,0),
 (3045,2160,33,2,2,4,0,0,0,1011,73,0,0),
 (3046,2321,0,4,4,2,0,0,0,1012,76,0,0);
+-- Companion spells for 3.3.5 (tools/fix_companion_spells.py): effect 97 (critter summon in 1.12, CAST_BUTTON in 3.3.5) becomes
+-- 28 (summon) with SummonProperties 41, like the stock companions, for the ones that summon a Lost Lands creature.
+-- The client rows in patch-R are changed the same way.
+UPDATE `spell_dbc` SET `Effect_1` = 28, `EffectMiscValueB_1` = 41 WHERE `ID` BETWEEN 1200000 AND 1202189 AND `Effect_1` = 97 AND `ImplicitTargetA_1` = 32
+  AND `EffectMiscValue_1` BETWEEN 1200000 AND 1205188;
