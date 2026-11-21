@@ -46,7 +46,7 @@ IDs, so keep `@CRE` and `@GO` at 1200000 if you want those spells to keep workin
 | Quest objectives done by hitting a player of a class (or a game master) with a spell | `mod_temucraft_lostlands_quest_cast` | 9 | `Temucraft.LostLands.CastObjectives` |
 | Auras removed when entering a map (world buffs in raids) | `mod_temucraft_lostlands_map_aura_removal` | 178 | `Temucraft.LostLands.MapAuraRemoval` |
 
-`.lostlands reload` (administrator) re-reads these tables.
+`.temucraft lostlands reload` (administrator) re-reads these tables.
 
 ## Scripted creatures and objects
 

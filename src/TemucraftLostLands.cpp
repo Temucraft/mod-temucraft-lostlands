@@ -12,7 +12,7 @@
  *                       or a game master) completes the quest objective.
  *   Map aura removal    entering a map in mod_temucraft_lostlands_map_aura_removal removes those auras.
  *
- *   .lostlands reload   re-reads the tables
+ *   .temucraft lostlands reload   re-reads the tables
  *
  * Written for AzerothCore; the ideas follow features of a 1.12 server, the code is new.
  */
@@ -253,7 +253,7 @@ public:
         {
             { "reload", HandleReload, 101001 /* SEC_ADMINISTRATOR -> RBAC */, Console::Yes },
         };
-        static ChatCommandTable root = { { "lostlands", lostLands } };
+        static ChatCommandTable root = { { "temucraft lostlands", lostLands } };
         return root;
     }
 
