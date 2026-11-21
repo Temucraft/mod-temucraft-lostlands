@@ -7,16 +7,17 @@ import re, struct
 
 # spell id, name, description, icon (SpellIcon id), creature entry (companions) or 0 (illusion toys)
 COMPANIONS = [
-    (96700, 'Corgi Pup', 'Right Click to summon and dismiss your corgi.', 1573, 608980),
-    (96701, 'Cloud Serpent Hatchling', 'Right Click to summon and dismiss your cloud serpent.', 1589, 608981),
-    (96702, 'Kobold Pip', 'Right Click to summon and dismiss your kobold. You no take candle!', 1522, 608982),
-    (96703, 'Wee Nefarian', 'Right Click to summon and dismiss your wee Nefarian.', 1699, 608983),
-    (96704, 'Willowisp', 'Right Click to summon and dismiss your wisp.', 117, 608984),
+    (1260000, 'Corgi Pup', 'Right Click to summon and dismiss your corgi.', 1573, 608980),
+    (1260001, 'Cloud Serpent Hatchling', 'Right Click to summon and dismiss your cloud serpent.', 1589, 608981),
+    (1260002, 'Kobold Pip', 'Right Click to summon and dismiss your kobold. You no take candle!', 1522, 608982),
+    (1260003, 'Wee Nefarian', 'Right Click to summon and dismiss your wee Nefarian.', 1699, 608983),
+    (1260004, 'Willowisp', 'Right Click to summon and dismiss your wisp.', 117, 608984),
+    (1260008, 'Coco', 'Right Click to summon and dismiss Coco.', 1573, 608985),
 ]
 ILLUSIONS = [
-    (96705, "Tuskarr Fisherman's Horn", 'Turns you into a tuskarr. Use again to drop it.', 3702),
-    (96706, 'Coin of Familiar Faces', 'Gives you a famous face of Azeroth. Use again to drop it.', 2801),
-    (96707, 'Tome of Disguise: Imp', 'Turns you into an imp. Use again to drop it.', 215),
+    (1260005, "Tuskarr Fisherman's Horn", 'Turns you into a tuskarr. Use again to drop it.', 3702),
+    (1260006, 'Coin of Familiar Faces', 'Gives you a famous face of Azeroth. Use again to drop it.', 2801),
+    (1260007, 'Tome of Disguise: Imp', 'Turns you into an imp. Use again to drop it.', 215),
 ]
 F_ID, F_EFFECT, F_TARGET, F_AURA, F_MISC, F_VISUAL, F_ICON, F_NAME, F_SUB, F_DESC, F_AURADESC = 0, 71, 86, 95, 110, 131, 133, 136, 153, 170, 187
 STRING_FIELDS = set(range(136, 204))
@@ -25,7 +26,8 @@ ReagentCount_1 ReagentCount_2 ReagentCount_3 ReagentCount_4 ReagentCount_5 Reage
 EquippedItemClass EquippedItemSubclass EquippedItemInvTypes EffectDieSides_1 EffectDieSides_2 EffectDieSides_3
 EffectBasePoints_1 EffectBasePoints_2 EffectBasePoints_3 EffectMiscValue_1 EffectMiscValue_2 EffectMiscValue_3
 EffectMiscValueB_1 EffectMiscValueB_2 EffectMiscValueB_3 RequiredAreasID PowerDisplayID'''.split())   # signed int columns of spell_dbc
-FIRST, LAST = 96700, 96709
+FIRST, LAST = 1260000, 1260009
+OLD_FIRST, OLD_LAST = 96700, 96709   # the first ids, taken by Cataclysm spells in patch-T and the server dbc: removed
 
 DBC = 'client/patch-R.MPQ/DBFilesClient/Spell.dbc'
 d = bytearray(open(DBC, 'rb').read())
@@ -37,7 +39,7 @@ def setu(r, i, v): r[i * 4:i * 4 + 4] = struct.pack('<I', v)
 def s_at(o): return strings[o:strings.index(b'\0', o)].decode('latin1')
 def add_str(t):
     o = len(strings); strings.extend(t.encode('latin1') + b'\0'); return o
-rows = [r for r in rows if not FIRST <= u(r, 0) <= LAST]
+rows = [r for r in rows if not FIRST <= u(r, 0) <= LAST and not OLD_FIRST <= u(r, 0) <= OLD_LAST]
 by_id = {u(r, 0): k for k, r in enumerate(rows)}
 companion_base = rows[by_id[10673]]   # Bombay Cat: summon (28), SummonProperties 41
 illusion_base = rows[by_id[1200911]]  # Illusion: Ghoul (our toy look)
@@ -61,11 +63,12 @@ rows.sort(key=lambda r: u(r, 0))
 hdr = struct.pack('<4s4I', b'WDBC', len(rows), fc, rs, len(strings))
 open(DBC, 'wb').write(hdr + b''.join(rows) + bytes(strings))
 
-# server rows: column names and number types from the Lost Lands spell rows in lostlands_dbc.sql
-src = open('data/sql/db-world/base/lostlands_dbc.sql').read()
+# server rows: column names and number types from the first row of the existing lostlands_shop_dbc.sql
+# (lostlands_dbc.sql is packed now, so its rows no longer list every column)
+src = open('data/sql/db-world/base/lostlands_shop_dbc.sql').read()
 i = src.index('INSERT INTO `spell_dbc` (')
 cols = re.findall(r'`(\w+)`', src[i + 25:src.index(') VALUES', i)])
-j = src.index('\n(1200911,', i)
+j = src.index('\n(%d,' % FIRST, i) if '\n(%d,' % FIRST in src else src.index('\n(%d,' % OLD_FIRST, i)
 vals = re.findall(r"'(?:[^'\\]|\\.|'')*'|[^,()\n]+", src[j + 2:src.index('\n', j + 1)].rstrip(',;)'))
 assert len(cols) == fc == len(vals), (len(cols), len(vals))
 def sqlval(r, f):
@@ -77,8 +80,11 @@ def sqlval(r, f):
         return repr(x)
     v = u(r, f)
     return str(v - (1 << 32) if v >= 1 << 31 and cols[f] in SIGNED else v)
-lines = ['-- mod-temucraft-lostlands: spell rows of the shop companions (96700-96704) and illusion toys (96705-96707).',
+lines = ['-- mod-temucraft-lostlands: spell rows of the shop companions (1260000-1260004, 1260008) and illusion toys',
+         '-- (1260005-1260007).',
          '-- Made by tools/build_shop_extras.py; the client rows are in client/patch-R.MPQ Spell.dbc.',
+         '-- 96700-96709 were the first ids of these rows; they belong to Cataclysm spells in the server dbc, so the old rows go.',
+         'DELETE FROM `spell_dbc` WHERE `ID` BETWEEN %d AND %d;' % (OLD_FIRST, OLD_LAST),
          'DELETE FROM `spell_dbc` WHERE `ID` BETWEEN %d AND %d;' % (FIRST, LAST),
          'INSERT INTO `spell_dbc` (' + ', '.join('`%s`' % c for c in cols) + ') VALUES']
 lines.append(',\n'.join('(' + ','.join(sqlval(r, f) for f in range(fc)) + ')' for r in out_rows) + ';')

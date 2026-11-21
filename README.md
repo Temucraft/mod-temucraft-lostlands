@@ -54,14 +54,15 @@ New items on models we already have, sold by the Temucraft Curator (mod-temucraf
 
 | Item | Spell | What |
 |---|---|---|
-| 610200 Corgi Pup | 96700 | companion (creature 608980, the Lost Lands corgi) |
-| 610201 Cloud Serpent Hatchling | 96701 | companion (608981, our black cloud serpent, small) |
-| 610202 Kobold Pip | 96702 | companion (608982, stock kobold look, small) |
-| 610203 Wee Nefarian | 96703 | companion (608983, stock Nefarian, very small) |
-| 610204 Willowisp | 96704 | companion (608984, stock wisp) |
-| 610205 Tuskarr Fisherman's Horn | 96705 | illusion toy: 5 tuskarr looks |
-| 610206 Coin of Familiar Faces | 96706 | illusion toy: 14 famous male and 5 famous female faces, by your gender |
-| 610207 Tome of Disguise: Imp | 96707 | illusion toy: imp |
+| 610200 Corgi Pup | 1260000 | companion (creature 608980, the Lost Lands corgi) |
+| 610201 Cloud Serpent Hatchling | 1260001 | companion (608981, our black cloud serpent, small) |
+| 610202 Kobold Pip | 1260002 | companion (608982, stock kobold look, small) |
+| 610203 Wee Nefarian | 1260003 | companion (608983, stock Nefarian, very small) |
+| 610204 Willowisp | 1260004 | companion (608984, stock wisp) |
+| 610205 Tuskarr Fisherman's Horn | 1260005 | illusion toy: 5 tuskarr looks |
+| 610206 Coin of Familiar Faces | 1260006 | illusion toy: 14 famous male and 5 famous female faces, by your gender |
+| 610207 Tome of Disguise: Imp | 1260007 | illusion toy: imp |
+| 610208 Coco | 1260008 | companion (608985, the stock dog look, display 10209) |
 
 The companions are collection type 2 (learned by the whole account); the illusion toys are in the Vanity window
 under "Costumes".
