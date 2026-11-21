@@ -1317,3 +1317,12 @@ INSERT INTO `mod_temucraft_lostlands_token_vendor` (`CreatureEntry`, `Slot`, `Te
 UPDATE `creature_template` SET `ScriptName` = 'npc_temucraft_lostlands_race_manager', `npcflag` = `npcflag` | 1 WHERE `entry` = 4507;
 UPDATE `creature_template` SET `ScriptName` = 'npc_temucraft_lostlands_rental', `npcflag` = `npcflag` | 1 WHERE `entry` IN (4710, 4779, 12354, 12355);
 UPDATE `gameobject_template` SET `ScriptName` = 'go_temucraft_lostlands_rest' WHERE `entry` = 31511;
+-- Shop illusion toys and companions (items and spells in lostlands_shop.sql and lostlands_shop_dbc.sql)
+INSERT INTO `mod_temucraft_lostlands_illusion` (`SpellID`, `Gender`, `DisplayID`) VALUES
+(96705,2,24052),(96705,2,22199),(96705,2,24382),(96705,2,28411),(96705,2,28412),
+(96706,0,4527),(96706,0,28127),(96706,0,29592),(96706,0,4307),(96706,0,3597),(96706,0,10357),(96706,0,17122),
+(96706,0,17822),(96706,0,22209),(96706,0,7006),(96706,0,26353),(96706,0,20023),(96706,0,30508),(96706,0,5566),
+(96706,1,30863),(96706,1,28213),(96706,1,7274),(96706,1,16820),(96706,1,26365),
+(96707,2,4449);
+INSERT INTO `mod_temucraft_lostlands_collection` (`ItemID`, `SpellID`, `Type`) VALUES
+(610200,96700,2),(610201,96701,2),(610202,96702,2),(610203,96703,2),(610204,96704,2);

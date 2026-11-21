@@ -40,11 +40,31 @@ IDs, so keep `@CRE` and `@GO` at 1200000 if you want those spells to keep workin
 
 | Feature | Table (world) | Rows | Config |
 |---|---|---|---|
-| Illusion toys: cast to turn into a random form for your gender; cast again, mount or fight to drop it | `mod_temucraft_lostlands_illusion` | 132 forms for 36 toys | `Temucraft.LostLands.Illusions` |
-| Account-wide collections: toys, mounts and companions taught by these items are learned by every character of the account | `mod_temucraft_lostlands_collection` | 721 items | `Temucraft.LostLands.AccountWideCollections` |
+| Illusion toys: cast to turn into a random form for your gender; cast again, mount or fight to drop it | `mod_temucraft_lostlands_illusion` | 157 forms for 39 toys | `Temucraft.LostLands.Illusions` |
+| Account-wide collections: toys, mounts and companions taught by these items are learned by every character of the account | `mod_temucraft_lostlands_collection` | 726 items | `Temucraft.LostLands.AccountWideCollections` |
 | Per-spawn object size | `mod_temucraft_lostlands_spawn_scale` | 13 | `Temucraft.LostLands.SpawnScale` |
 | Quest objectives done by hitting a player of a class (or a game master) with a spell | `mod_temucraft_lostlands_quest_cast` | 9 | `Temucraft.LostLands.CastObjectives` |
 | Auras removed when entering a map (world buffs in raids) | `mod_temucraft_lostlands_map_aura_removal` | 178 | `Temucraft.LostLands.MapAuraRemoval` |
+
+### Shop companions and illusion toys
+
+New items on models we already have, sold by the Temucraft Curator (mod-temucraft-shop): rows in
+`lostlands_shop.sql`, spell rows in `lostlands_shop_dbc.sql` and client patch-R Spell.dbc (both made by
+`tools/build_shop_extras.py`), illusion forms and collection rows at the end of `lostlands_features.sql`.
+
+| Item | Spell | What |
+|---|---|---|
+| 610200 Corgi Pup | 96700 | companion (creature 608980, the Lost Lands corgi) |
+| 610201 Cloud Serpent Hatchling | 96701 | companion (608981, our black cloud serpent, small) |
+| 610202 Kobold Pip | 96702 | companion (608982, stock kobold look, small) |
+| 610203 Wee Nefarian | 96703 | companion (608983, stock Nefarian, very small) |
+| 610204 Willowisp | 96704 | companion (608984, stock wisp) |
+| 610205 Tuskarr Fisherman's Horn | 96705 | illusion toy: 5 tuskarr looks |
+| 610206 Coin of Familiar Faces | 96706 | illusion toy: 14 famous male and 5 famous female faces, by your gender |
+| 610207 Tome of Disguise: Imp | 96707 | illusion toy: imp |
+
+The companions are collection type 2 (learned by the whole account); the illusion toys are in the Vanity window
+under "Costumes".
 
 `.temucraft lostlands reload` (administrator) re-reads these tables.
 
