@@ -134,3 +134,11 @@ module and id plus the locale (`deDE`, `esES`, `frFR`, ...). If a row is missing
 `lostlands_map_difficulty.sql` adds `mapdifficulty_dbc` rows for the 15 instance maps (normal and heroic for the
 dungeons; 10/25 normal and heroic, or a single 20- or 40-player mode, for the raids). Without a MapDifficulty row the
 core refuses to let anyone in.
+
+## Compact SQL
+
+The big SQL files (creatures, dbc, gameobjects, gossip, items, loot, quests, spawns, vendors and the optional spawns)
+were packed with `tools/sqlpack.py`: same rows, about a third smaller. It merges INSERTs, leaves out columns that are at
+their table default (`tools/sql_defaults.json`, from the core's schema) and writes `@VAR+number` columns as numbers
+through a temporary table, then adds the variable. To pack an edited file again:
+`python3 tools/sqlpack.py tools/sql_defaults.json in.sql out.sql`.

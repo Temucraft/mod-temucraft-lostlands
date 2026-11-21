@@ -1,0 +1,5004 @@
+{
+"creature": {
+"Comment": [
+"str",
+"NULL"
+],
+"CreateObject": [
+"num",
+"0"
+],
+"MovementType": [
+"num",
+"0"
+],
+"ScriptName": [
+"str",
+"''"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"areaId": [
+"num",
+"0"
+],
+"curhealth": [
+"num",
+"1"
+],
+"curmana": [
+"num",
+"0"
+],
+"currentwaypoint": [
+"num",
+"0"
+],
+"dynamicflags": [
+"num",
+"0"
+],
+"equipment_id": [
+"num",
+"0"
+],
+"guid": [
+"auto",
+null
+],
+"id": [
+"num",
+"0"
+],
+"map": [
+"num",
+"0"
+],
+"npcflag": [
+"num",
+"0"
+],
+"orientation": [
+"num",
+"0"
+],
+"phaseMask": [
+"num",
+"1"
+],
+"position_x": [
+"num",
+"0"
+],
+"position_y": [
+"num",
+"0"
+],
+"position_z": [
+"num",
+"0"
+],
+"spawnMask": [
+"num",
+"1"
+],
+"spawntimesecs": [
+"num",
+"120"
+],
+"unit_flags": [
+"num",
+"0"
+],
+"wander_distance": [
+"num",
+"0"
+],
+"zoneId": [
+"num",
+"0"
+]
+},
+"creature_addon": {
+"auras": [
+"str",
+"NULL"
+],
+"bytes1": [
+"num",
+"0"
+],
+"bytes2": [
+"num",
+"0"
+],
+"emote": [
+"num",
+"0"
+],
+"guid": [
+"num",
+"0"
+],
+"mount": [
+"num",
+"0"
+],
+"path_id": [
+"num",
+"0"
+],
+"visibilityDistanceType": [
+"num",
+"0"
+]
+},
+"creature_default_trainer": {
+"CreatureId": [
+"num",
+null
+],
+"TrainerId": [
+"num",
+"0"
+]
+},
+"creature_equip_template": {
+"CreatureID": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"1"
+],
+"ItemID1": [
+"num",
+"0"
+],
+"ItemID2": [
+"num",
+"0"
+],
+"ItemID3": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"creature_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"creature_questender": {
+"id": [
+"num",
+"0"
+],
+"quest": [
+"num",
+"0"
+]
+},
+"creature_queststarter": {
+"id": [
+"num",
+"0"
+],
+"quest": [
+"num",
+"0"
+]
+},
+"creature_template": {
+"AIName": [
+"str",
+"''"
+],
+"ArmorModifier": [
+"num",
+"1"
+],
+"BaseAttackTime": [
+"num",
+"0"
+],
+"BaseVariance": [
+"num",
+"1"
+],
+"CreatureImmunitiesId": [
+"num",
+"0"
+],
+"DamageModifier": [
+"num",
+"1"
+],
+"ExperienceModifier": [
+"num",
+"1"
+],
+"HealthModifier": [
+"num",
+"1"
+],
+"HoverHeight": [
+"num",
+"1"
+],
+"IconName": [
+"str",
+"NULL"
+],
+"KillCredit1": [
+"num",
+"0"
+],
+"KillCredit2": [
+"num",
+"0"
+],
+"ManaModifier": [
+"num",
+"1"
+],
+"MovementType": [
+"num",
+"0"
+],
+"PetSpellDataId": [
+"num",
+"0"
+],
+"RacialLeader": [
+"num",
+"0"
+],
+"RangeAttackTime": [
+"num",
+"0"
+],
+"RangeVariance": [
+"num",
+"1"
+],
+"RegenHealth": [
+"num",
+"1"
+],
+"ScriptName": [
+"str",
+"''"
+],
+"VehicleId": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"detection_range": [
+"num",
+"20"
+],
+"difficulty_entry_1": [
+"num",
+"0"
+],
+"difficulty_entry_2": [
+"num",
+"0"
+],
+"difficulty_entry_3": [
+"num",
+"0"
+],
+"dmgschool": [
+"num",
+"0"
+],
+"dynamicflags": [
+"num",
+"0"
+],
+"entry": [
+"num",
+"0"
+],
+"exp": [
+"num",
+"0"
+],
+"faction": [
+"num",
+"0"
+],
+"family": [
+"num",
+"0"
+],
+"flags_extra": [
+"num",
+"0"
+],
+"gossip_menu_id": [
+"num",
+"0"
+],
+"lootid": [
+"num",
+"0"
+],
+"maxgold": [
+"num",
+"0"
+],
+"maxlevel": [
+"num",
+"1"
+],
+"mingold": [
+"num",
+"0"
+],
+"minlevel": [
+"num",
+"1"
+],
+"movementId": [
+"num",
+"0"
+],
+"name": [
+"str",
+"'0'"
+],
+"npcflag": [
+"num",
+"0"
+],
+"pickpocketloot": [
+"num",
+"0"
+],
+"rank": [
+"num",
+"0"
+],
+"skinloot": [
+"num",
+"0"
+],
+"speed_flight": [
+"num",
+"1"
+],
+"speed_run": [
+"num",
+"1.14286"
+],
+"speed_swim": [
+"num",
+"1"
+],
+"speed_walk": [
+"num",
+"1"
+],
+"subname": [
+"str",
+"NULL"
+],
+"type": [
+"num",
+"0"
+],
+"type_flags": [
+"num",
+"0"
+],
+"unit_class": [
+"num",
+"0"
+],
+"unit_flags": [
+"num",
+"0"
+],
+"unit_flags2": [
+"num",
+"0"
+]
+},
+"creature_template_addon": {
+"auras": [
+"str",
+"NULL"
+],
+"bytes1": [
+"num",
+"0"
+],
+"bytes2": [
+"num",
+"0"
+],
+"emote": [
+"num",
+"0"
+],
+"entry": [
+"num",
+"0"
+],
+"mount": [
+"num",
+"0"
+],
+"path_id": [
+"num",
+"0"
+],
+"visibilityDistanceType": [
+"num",
+"0"
+]
+},
+"creature_template_model": {
+"CreatureDisplayID": [
+"num",
+null
+],
+"CreatureID": [
+"num",
+null
+],
+"DisplayScale": [
+"num",
+"1"
+],
+"Idx": [
+"num",
+"0"
+],
+"Probability": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"creature_template_movement": {
+"Chase": [
+"num",
+"NULL"
+],
+"CreatureId": [
+"num",
+"0"
+],
+"Flight": [
+"num",
+"NULL"
+],
+"Ground": [
+"num",
+"NULL"
+],
+"InteractionPauseTimer": [
+"num",
+"NULL"
+],
+"Random": [
+"num",
+"NULL"
+],
+"Rooted": [
+"num",
+"NULL"
+],
+"Swim": [
+"num",
+"NULL"
+]
+},
+"creature_template_resistance": {
+"CreatureID": [
+"num",
+null
+],
+"Resistance": [
+"num",
+"NULL"
+],
+"School": [
+"num",
+null
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"creature_template_spell": {
+"CreatureID": [
+"num",
+null
+],
+"Index": [
+"num",
+"0"
+],
+"Spell": [
+"num",
+"NULL"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"creaturedisplayinfo_dbc": {
+"BloodID": [
+"num",
+"0"
+],
+"BloodLevel": [
+"num",
+"0"
+],
+"CreatureGeosetData": [
+"num",
+"0"
+],
+"CreatureModelAlpha": [
+"num",
+"0"
+],
+"CreatureModelScale": [
+"num",
+"0"
+],
+"ExtendedDisplayInfoID": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"ModelID": [
+"num",
+"0"
+],
+"NPCSoundID": [
+"num",
+"0"
+],
+"ObjectEffectPackageID": [
+"num",
+"0"
+],
+"ParticleColorID": [
+"num",
+"0"
+],
+"PortraitTextureName": [
+"str",
+"NULL"
+],
+"SoundID": [
+"num",
+"0"
+],
+"TextureVariation_1": [
+"str",
+"NULL"
+],
+"TextureVariation_2": [
+"str",
+"NULL"
+],
+"TextureVariation_3": [
+"str",
+"NULL"
+]
+},
+"creaturedisplayinfoextra_dbc": {
+"BakeName": [
+"str",
+null
+],
+"DisplayRaceID": [
+"num",
+"0"
+],
+"DisplaySexID": [
+"num",
+"0"
+],
+"FaceID": [
+"num",
+"0"
+],
+"FacialHairID": [
+"num",
+"0"
+],
+"Flags": [
+"num",
+"0"
+],
+"HairColorID": [
+"num",
+"0"
+],
+"HairStyleID": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"NPCItemDisplay1": [
+"num",
+"0"
+],
+"NPCItemDisplay10": [
+"num",
+"0"
+],
+"NPCItemDisplay11": [
+"num",
+"0"
+],
+"NPCItemDisplay2": [
+"num",
+"0"
+],
+"NPCItemDisplay3": [
+"num",
+"0"
+],
+"NPCItemDisplay4": [
+"num",
+"0"
+],
+"NPCItemDisplay5": [
+"num",
+"0"
+],
+"NPCItemDisplay6": [
+"num",
+"0"
+],
+"NPCItemDisplay7": [
+"num",
+"0"
+],
+"NPCItemDisplay8": [
+"num",
+"0"
+],
+"NPCItemDisplay9": [
+"num",
+"0"
+],
+"SkinID": [
+"num",
+"0"
+]
+},
+"creaturemodeldata_dbc": {
+"AttachedEffectScale": [
+"num",
+"0"
+],
+"BloodID": [
+"num",
+"0"
+],
+"CollisionHeight": [
+"num",
+"0"
+],
+"CollisionWidth": [
+"num",
+"0"
+],
+"DeathThudShakeSize": [
+"num",
+"0"
+],
+"Flags": [
+"num",
+"0"
+],
+"FoleyMaterialID": [
+"num",
+"0"
+],
+"FootprintParticleScale": [
+"num",
+"0"
+],
+"FootprintTextureID": [
+"num",
+"0"
+],
+"FootprintTextureLength": [
+"num",
+"0"
+],
+"FootprintTextureWidth": [
+"num",
+"0"
+],
+"FootstepShakeSize": [
+"num",
+"0"
+],
+"GeoBoxMaxX": [
+"num",
+"0"
+],
+"GeoBoxMaxY": [
+"num",
+"0"
+],
+"GeoBoxMaxZ": [
+"num",
+"0"
+],
+"GeoBoxMinX": [
+"num",
+"0"
+],
+"GeoBoxMinY": [
+"num",
+"0"
+],
+"GeoBoxMinZ": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"MissileCollisionPush": [
+"num",
+"0"
+],
+"MissileCollisionRadius": [
+"num",
+"0"
+],
+"MissileCollisionRaise": [
+"num",
+"0"
+],
+"ModelName": [
+"str",
+"NULL"
+],
+"ModelScale": [
+"num",
+"0"
+],
+"MountHeight": [
+"num",
+"0"
+],
+"SizeClass": [
+"num",
+"0"
+],
+"SoundID": [
+"num",
+"0"
+],
+"WorldEffectScale": [
+"num",
+"0"
+]
+},
+"disenchant_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"faction_dbc": {
+"Description_Lang_Mask": [
+"num",
+"0"
+],
+"Description_Lang_Unk": [
+"str",
+"NULL"
+],
+"Description_Lang_deDE": [
+"str",
+"NULL"
+],
+"Description_Lang_enCN": [
+"str",
+"NULL"
+],
+"Description_Lang_enGB": [
+"str",
+"NULL"
+],
+"Description_Lang_enTW": [
+"str",
+"NULL"
+],
+"Description_Lang_enUS": [
+"str",
+"NULL"
+],
+"Description_Lang_esES": [
+"str",
+"NULL"
+],
+"Description_Lang_esMX": [
+"str",
+"NULL"
+],
+"Description_Lang_frFR": [
+"str",
+"NULL"
+],
+"Description_Lang_itIT": [
+"str",
+"NULL"
+],
+"Description_Lang_koKR": [
+"str",
+"NULL"
+],
+"Description_Lang_ptBR": [
+"str",
+"NULL"
+],
+"Description_Lang_ptPT": [
+"str",
+"NULL"
+],
+"Description_Lang_ruRU": [
+"str",
+"NULL"
+],
+"Description_Lang_zhCN": [
+"str",
+"NULL"
+],
+"Description_Lang_zhTW": [
+"str",
+"NULL"
+],
+"ID": [
+"num",
+"0"
+],
+"Name_Lang_Mask": [
+"num",
+"0"
+],
+"Name_Lang_Unk": [
+"str",
+"NULL"
+],
+"Name_Lang_deDE": [
+"str",
+"NULL"
+],
+"Name_Lang_enCN": [
+"str",
+"NULL"
+],
+"Name_Lang_enGB": [
+"str",
+"NULL"
+],
+"Name_Lang_enTW": [
+"str",
+"NULL"
+],
+"Name_Lang_enUS": [
+"str",
+"NULL"
+],
+"Name_Lang_esES": [
+"str",
+"NULL"
+],
+"Name_Lang_esMX": [
+"str",
+"NULL"
+],
+"Name_Lang_frFR": [
+"str",
+"NULL"
+],
+"Name_Lang_itIT": [
+"str",
+"NULL"
+],
+"Name_Lang_koKR": [
+"str",
+"NULL"
+],
+"Name_Lang_ptBR": [
+"str",
+"NULL"
+],
+"Name_Lang_ptPT": [
+"str",
+"NULL"
+],
+"Name_Lang_ruRU": [
+"str",
+"NULL"
+],
+"Name_Lang_zhCN": [
+"str",
+"NULL"
+],
+"Name_Lang_zhTW": [
+"str",
+"NULL"
+],
+"ParentFactionCap_1": [
+"num",
+"0"
+],
+"ParentFactionCap_2": [
+"num",
+"0"
+],
+"ParentFactionID": [
+"num",
+"0"
+],
+"ParentFactionMod_1": [
+"num",
+"0"
+],
+"ParentFactionMod_2": [
+"num",
+"0"
+],
+"ReputationBase_1": [
+"num",
+"0"
+],
+"ReputationBase_2": [
+"num",
+"0"
+],
+"ReputationBase_3": [
+"num",
+"0"
+],
+"ReputationBase_4": [
+"num",
+"0"
+],
+"ReputationClassMask_1": [
+"num",
+"0"
+],
+"ReputationClassMask_2": [
+"num",
+"0"
+],
+"ReputationClassMask_3": [
+"num",
+"0"
+],
+"ReputationClassMask_4": [
+"num",
+"0"
+],
+"ReputationFlags_1": [
+"num",
+"0"
+],
+"ReputationFlags_2": [
+"num",
+"0"
+],
+"ReputationFlags_3": [
+"num",
+"0"
+],
+"ReputationFlags_4": [
+"num",
+"0"
+],
+"ReputationIndex": [
+"num",
+"0"
+],
+"ReputationRaceMask_1": [
+"num",
+"0"
+],
+"ReputationRaceMask_2": [
+"num",
+"0"
+],
+"ReputationRaceMask_3": [
+"num",
+"0"
+],
+"ReputationRaceMask_4": [
+"num",
+"0"
+]
+},
+"factiontemplate_dbc": {
+"Enemies_1": [
+"num",
+"0"
+],
+"Enemies_2": [
+"num",
+"0"
+],
+"Enemies_3": [
+"num",
+"0"
+],
+"Enemies_4": [
+"num",
+"0"
+],
+"EnemyGroup": [
+"num",
+"0"
+],
+"Faction": [
+"num",
+"0"
+],
+"FactionGroup": [
+"num",
+"0"
+],
+"Flags": [
+"num",
+"0"
+],
+"FriendGroup": [
+"num",
+"0"
+],
+"Friend_1": [
+"num",
+"0"
+],
+"Friend_2": [
+"num",
+"0"
+],
+"Friend_3": [
+"num",
+"0"
+],
+"Friend_4": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+]
+},
+"gameobject": {
+"Comment": [
+"str",
+"NULL"
+],
+"ScriptName": [
+"str",
+"''"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"animprogress": [
+"num",
+"0"
+],
+"areaId": [
+"num",
+"0"
+],
+"guid": [
+"auto",
+null
+],
+"id": [
+"num",
+"0"
+],
+"map": [
+"num",
+"0"
+],
+"orientation": [
+"num",
+"0"
+],
+"phaseMask": [
+"num",
+"1"
+],
+"position_x": [
+"num",
+"0"
+],
+"position_y": [
+"num",
+"0"
+],
+"position_z": [
+"num",
+"0"
+],
+"rotation0": [
+"num",
+"0"
+],
+"rotation1": [
+"num",
+"0"
+],
+"rotation2": [
+"num",
+"0"
+],
+"rotation3": [
+"num",
+"0"
+],
+"spawnMask": [
+"num",
+"1"
+],
+"spawntimesecs": [
+"num",
+"0"
+],
+"state": [
+"num",
+"0"
+],
+"zoneId": [
+"num",
+"0"
+]
+},
+"gameobject_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"gameobject_questender": {
+"id": [
+"num",
+"0"
+],
+"quest": [
+"num",
+"0"
+]
+},
+"gameobject_queststarter": {
+"id": [
+"num",
+"0"
+],
+"quest": [
+"num",
+"0"
+]
+},
+"gameobject_template": {
+"AIName": [
+"str",
+"''"
+],
+"Data0": [
+"num",
+"0"
+],
+"Data1": [
+"num",
+"0"
+],
+"Data10": [
+"num",
+"0"
+],
+"Data11": [
+"num",
+"0"
+],
+"Data12": [
+"num",
+"0"
+],
+"Data13": [
+"num",
+"0"
+],
+"Data14": [
+"num",
+"0"
+],
+"Data15": [
+"num",
+"0"
+],
+"Data16": [
+"num",
+"0"
+],
+"Data17": [
+"num",
+"0"
+],
+"Data18": [
+"num",
+"0"
+],
+"Data19": [
+"num",
+"0"
+],
+"Data2": [
+"num",
+"0"
+],
+"Data20": [
+"num",
+"0"
+],
+"Data21": [
+"num",
+"0"
+],
+"Data22": [
+"num",
+"0"
+],
+"Data23": [
+"num",
+"0"
+],
+"Data3": [
+"num",
+"0"
+],
+"Data4": [
+"num",
+"0"
+],
+"Data5": [
+"num",
+"0"
+],
+"Data6": [
+"num",
+"0"
+],
+"Data7": [
+"num",
+"0"
+],
+"Data8": [
+"num",
+"0"
+],
+"Data9": [
+"num",
+"0"
+],
+"IconName": [
+"str",
+"''"
+],
+"ScriptName": [
+"str",
+"''"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"castBarCaption": [
+"str",
+"''"
+],
+"displayId": [
+"num",
+"0"
+],
+"entry": [
+"num",
+"0"
+],
+"name": [
+"str",
+"''"
+],
+"size": [
+"num",
+"1"
+],
+"type": [
+"num",
+"0"
+],
+"unk1": [
+"str",
+"''"
+]
+},
+"gameobject_template_addon": {
+"artkit0": [
+"num",
+"0"
+],
+"artkit1": [
+"num",
+"0"
+],
+"artkit2": [
+"num",
+"0"
+],
+"artkit3": [
+"num",
+"0"
+],
+"entry": [
+"num",
+"0"
+],
+"faction": [
+"num",
+"0"
+],
+"flags": [
+"num",
+"0"
+],
+"maxgold": [
+"num",
+"0"
+],
+"mingold": [
+"num",
+"0"
+]
+},
+"gameobjectdisplayinfo_dbc": {
+"GeoBoxMaxX": [
+"num",
+"0"
+],
+"GeoBoxMaxY": [
+"num",
+"0"
+],
+"GeoBoxMaxZ": [
+"num",
+"0"
+],
+"GeoBoxMinX": [
+"num",
+"0"
+],
+"GeoBoxMinY": [
+"num",
+"0"
+],
+"GeoBoxMinZ": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"ModelName": [
+"str",
+"NULL"
+],
+"ObjectEffectPackageID": [
+"num",
+"0"
+],
+"Sound_1": [
+"num",
+"0"
+],
+"Sound_10": [
+"num",
+"0"
+],
+"Sound_2": [
+"num",
+"0"
+],
+"Sound_3": [
+"num",
+"0"
+],
+"Sound_4": [
+"num",
+"0"
+],
+"Sound_5": [
+"num",
+"0"
+],
+"Sound_6": [
+"num",
+"0"
+],
+"Sound_7": [
+"num",
+"0"
+],
+"Sound_8": [
+"num",
+"0"
+],
+"Sound_9": [
+"num",
+"0"
+]
+},
+"gossip_menu": {
+"MenuID": [
+"num",
+"0"
+],
+"TextID": [
+"num",
+"0"
+]
+},
+"gossip_menu_option": {
+"ActionMenuID": [
+"num",
+"0"
+],
+"ActionPoiID": [
+"num",
+"0"
+],
+"BoxBroadcastTextID": [
+"num",
+"0"
+],
+"BoxCoded": [
+"num",
+"0"
+],
+"BoxMoney": [
+"num",
+"0"
+],
+"BoxText": [
+"str",
+"NULL"
+],
+"MenuID": [
+"num",
+"0"
+],
+"OptionBroadcastTextID": [
+"num",
+"0"
+],
+"OptionID": [
+"num",
+"0"
+],
+"OptionIcon": [
+"num",
+"0"
+],
+"OptionNpcFlag": [
+"num",
+"0"
+],
+"OptionText": [
+"str",
+"NULL"
+],
+"OptionType": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"item_dbc": {
+"ClassID": [
+"num",
+"0"
+],
+"DisplayInfoID": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"InventoryType": [
+"num",
+"0"
+],
+"Material": [
+"num",
+"0"
+],
+"SheatheType": [
+"num",
+"0"
+],
+"Sound_Override_Subclassid": [
+"num",
+"0"
+],
+"SubclassID": [
+"num",
+"0"
+]
+},
+"item_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"item_template": {
+"AllowableClass": [
+"num",
+"-1"
+],
+"AllowableRace": [
+"num",
+"-1"
+],
+"ArmorDamageModifier": [
+"num",
+"0"
+],
+"BagFamily": [
+"num",
+"0"
+],
+"BuyCount": [
+"num",
+"1"
+],
+"BuyPrice": [
+"num",
+"0"
+],
+"ContainerSlots": [
+"num",
+"0"
+],
+"DisenchantID": [
+"num",
+"0"
+],
+"Flags": [
+"num",
+"0"
+],
+"FlagsExtra": [
+"num",
+"0"
+],
+"FoodType": [
+"num",
+"0"
+],
+"GemProperties": [
+"num",
+"0"
+],
+"HolidayId": [
+"num",
+"0"
+],
+"InventoryType": [
+"num",
+"0"
+],
+"ItemLevel": [
+"num",
+"0"
+],
+"ItemLimitCategory": [
+"num",
+"0"
+],
+"LanguageID": [
+"num",
+"0"
+],
+"Map": [
+"num",
+"0"
+],
+"Material": [
+"num",
+"0"
+],
+"MaxDurability": [
+"num",
+"0"
+],
+"PageMaterial": [
+"num",
+"0"
+],
+"PageText": [
+"num",
+"0"
+],
+"Quality": [
+"num",
+"0"
+],
+"RandomProperty": [
+"num",
+"0"
+],
+"RandomSuffix": [
+"num",
+"0"
+],
+"RangedModRange": [
+"num",
+"0"
+],
+"RequiredCityRank": [
+"num",
+"0"
+],
+"RequiredDisenchantSkill": [
+"num",
+"-1"
+],
+"RequiredLevel": [
+"num",
+"0"
+],
+"RequiredReputationFaction": [
+"num",
+"0"
+],
+"RequiredReputationRank": [
+"num",
+"0"
+],
+"RequiredSkill": [
+"num",
+"0"
+],
+"RequiredSkillRank": [
+"num",
+"0"
+],
+"ScalingStatDistribution": [
+"num",
+"0"
+],
+"ScalingStatValue": [
+"num",
+"0"
+],
+"ScriptName": [
+"str",
+"''"
+],
+"SellPrice": [
+"num",
+"0"
+],
+"SoundOverrideSubclass": [
+"num",
+"-1"
+],
+"TotemCategory": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"ammo_type": [
+"num",
+"0"
+],
+"arcane_res": [
+"num",
+"NULL"
+],
+"area": [
+"num",
+"0"
+],
+"armor": [
+"num",
+"0"
+],
+"block": [
+"num",
+"0"
+],
+"bonding": [
+"num",
+"0"
+],
+"class": [
+"num",
+"0"
+],
+"delay": [
+"num",
+"1000"
+],
+"description": [
+"str",
+"''"
+],
+"displayid": [
+"num",
+"0"
+],
+"dmg_max1": [
+"num",
+"0"
+],
+"dmg_max2": [
+"num",
+"0"
+],
+"dmg_min1": [
+"num",
+"0"
+],
+"dmg_min2": [
+"num",
+"0"
+],
+"dmg_type1": [
+"num",
+"0"
+],
+"dmg_type2": [
+"num",
+"0"
+],
+"duration": [
+"num",
+"0"
+],
+"entry": [
+"num",
+"0"
+],
+"fire_res": [
+"num",
+"NULL"
+],
+"flagsCustom": [
+"num",
+"0"
+],
+"frost_res": [
+"num",
+"NULL"
+],
+"holy_res": [
+"num",
+"NULL"
+],
+"itemset": [
+"num",
+"0"
+],
+"lockid": [
+"num",
+"0"
+],
+"maxMoneyLoot": [
+"num",
+"0"
+],
+"maxcount": [
+"num",
+"0"
+],
+"minMoneyLoot": [
+"num",
+"0"
+],
+"name": [
+"str",
+"''"
+],
+"nature_res": [
+"num",
+"NULL"
+],
+"requiredhonorrank": [
+"num",
+"0"
+],
+"requiredspell": [
+"num",
+"0"
+],
+"shadow_res": [
+"num",
+"NULL"
+],
+"sheath": [
+"num",
+"0"
+],
+"socketBonus": [
+"num",
+"0"
+],
+"socketColor_1": [
+"num",
+"0"
+],
+"socketColor_2": [
+"num",
+"0"
+],
+"socketColor_3": [
+"num",
+"0"
+],
+"socketContent_1": [
+"num",
+"0"
+],
+"socketContent_2": [
+"num",
+"0"
+],
+"socketContent_3": [
+"num",
+"0"
+],
+"spellcategory_1": [
+"num",
+"0"
+],
+"spellcategory_2": [
+"num",
+"0"
+],
+"spellcategory_3": [
+"num",
+"0"
+],
+"spellcategory_4": [
+"num",
+"0"
+],
+"spellcategory_5": [
+"num",
+"0"
+],
+"spellcategorycooldown_1": [
+"num",
+"-1"
+],
+"spellcategorycooldown_2": [
+"num",
+"-1"
+],
+"spellcategorycooldown_3": [
+"num",
+"-1"
+],
+"spellcategorycooldown_4": [
+"num",
+"-1"
+],
+"spellcategorycooldown_5": [
+"num",
+"-1"
+],
+"spellcharges_1": [
+"num",
+"0"
+],
+"spellcharges_2": [
+"num",
+"0"
+],
+"spellcharges_3": [
+"num",
+"0"
+],
+"spellcharges_4": [
+"num",
+"0"
+],
+"spellcharges_5": [
+"num",
+"0"
+],
+"spellcooldown_1": [
+"num",
+"-1"
+],
+"spellcooldown_2": [
+"num",
+"-1"
+],
+"spellcooldown_3": [
+"num",
+"-1"
+],
+"spellcooldown_4": [
+"num",
+"-1"
+],
+"spellcooldown_5": [
+"num",
+"-1"
+],
+"spellid_1": [
+"num",
+"0"
+],
+"spellid_2": [
+"num",
+"0"
+],
+"spellid_3": [
+"num",
+"0"
+],
+"spellid_4": [
+"num",
+"0"
+],
+"spellid_5": [
+"num",
+"0"
+],
+"spellppmRate_1": [
+"num",
+"0"
+],
+"spellppmRate_2": [
+"num",
+"0"
+],
+"spellppmRate_3": [
+"num",
+"0"
+],
+"spellppmRate_4": [
+"num",
+"0"
+],
+"spellppmRate_5": [
+"num",
+"0"
+],
+"spelltrigger_1": [
+"num",
+"0"
+],
+"spelltrigger_2": [
+"num",
+"0"
+],
+"spelltrigger_3": [
+"num",
+"0"
+],
+"spelltrigger_4": [
+"num",
+"0"
+],
+"spelltrigger_5": [
+"num",
+"0"
+],
+"stackable": [
+"num",
+"1"
+],
+"startquest": [
+"num",
+"0"
+],
+"stat_type1": [
+"num",
+"0"
+],
+"stat_type10": [
+"num",
+"0"
+],
+"stat_type2": [
+"num",
+"0"
+],
+"stat_type3": [
+"num",
+"0"
+],
+"stat_type4": [
+"num",
+"0"
+],
+"stat_type5": [
+"num",
+"0"
+],
+"stat_type6": [
+"num",
+"0"
+],
+"stat_type7": [
+"num",
+"0"
+],
+"stat_type8": [
+"num",
+"0"
+],
+"stat_type9": [
+"num",
+"0"
+],
+"stat_value1": [
+"num",
+"0"
+],
+"stat_value10": [
+"num",
+"0"
+],
+"stat_value2": [
+"num",
+"0"
+],
+"stat_value3": [
+"num",
+"0"
+],
+"stat_value4": [
+"num",
+"0"
+],
+"stat_value5": [
+"num",
+"0"
+],
+"stat_value6": [
+"num",
+"0"
+],
+"stat_value7": [
+"num",
+"0"
+],
+"stat_value8": [
+"num",
+"0"
+],
+"stat_value9": [
+"num",
+"0"
+],
+"subclass": [
+"num",
+"0"
+]
+},
+"itemdisplayinfo_dbc": {
+"Flags": [
+"num",
+"0"
+],
+"GeosetGroup_1": [
+"num",
+"0"
+],
+"GeosetGroup_2": [
+"num",
+"0"
+],
+"GeosetGroup_3": [
+"num",
+"0"
+],
+"GroupSoundIndex": [
+"num",
+"0"
+],
+"HelmetGeosetVis_1": [
+"num",
+"0"
+],
+"HelmetGeosetVis_2": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"InventoryIcon_1": [
+"str",
+"NULL"
+],
+"InventoryIcon_2": [
+"str",
+"NULL"
+],
+"ItemVisual": [
+"num",
+"0"
+],
+"ModelName_1": [
+"str",
+"NULL"
+],
+"ModelName_2": [
+"str",
+"NULL"
+],
+"ModelTexture_1": [
+"str",
+"NULL"
+],
+"ModelTexture_2": [
+"str",
+"NULL"
+],
+"ParticleColorID": [
+"num",
+"0"
+],
+"SpellVisualID": [
+"num",
+"0"
+],
+"Texture_1": [
+"str",
+"NULL"
+],
+"Texture_2": [
+"str",
+"NULL"
+],
+"Texture_3": [
+"str",
+"NULL"
+],
+"Texture_4": [
+"str",
+"NULL"
+],
+"Texture_5": [
+"str",
+"NULL"
+],
+"Texture_6": [
+"str",
+"NULL"
+],
+"Texture_7": [
+"str",
+"NULL"
+],
+"Texture_8": [
+"str",
+"NULL"
+]
+},
+"mapdifficulty_dbc": {
+"Difficulty": [
+"num",
+"0"
+],
+"Difficultystring": [
+"str",
+"NULL"
+],
+"ID": [
+"num",
+"0"
+],
+"MapID": [
+"num",
+"0"
+],
+"MaxPlayers": [
+"num",
+"0"
+],
+"Message_Lang_Mask": [
+"num",
+"0"
+],
+"Message_Lang_Unk": [
+"str",
+"NULL"
+],
+"Message_Lang_deDE": [
+"str",
+"NULL"
+],
+"Message_Lang_enCN": [
+"str",
+"NULL"
+],
+"Message_Lang_enGB": [
+"str",
+"NULL"
+],
+"Message_Lang_enTW": [
+"str",
+"NULL"
+],
+"Message_Lang_enUS": [
+"str",
+"NULL"
+],
+"Message_Lang_esES": [
+"str",
+"NULL"
+],
+"Message_Lang_esMX": [
+"str",
+"NULL"
+],
+"Message_Lang_frFR": [
+"str",
+"NULL"
+],
+"Message_Lang_itIT": [
+"str",
+"NULL"
+],
+"Message_Lang_koKR": [
+"str",
+"NULL"
+],
+"Message_Lang_ptBR": [
+"str",
+"NULL"
+],
+"Message_Lang_ptPT": [
+"str",
+"NULL"
+],
+"Message_Lang_ruRU": [
+"str",
+"NULL"
+],
+"Message_Lang_zhCN": [
+"str",
+"NULL"
+],
+"Message_Lang_zhTW": [
+"str",
+"NULL"
+],
+"RaidDuration": [
+"num",
+"0"
+]
+},
+"mod_temucraft_lostlands_collection": {
+"ItemID": [
+"num",
+null
+],
+"SpellID": [
+"num",
+null
+],
+"Type": [
+"num",
+"0"
+]
+},
+"mod_temucraft_lostlands_explore": {
+"CreditEntry": [
+"num",
+null
+],
+"ObjectEntry": [
+"num",
+null
+],
+"QuestID": [
+"num",
+null
+],
+"Radius": [
+"num",
+"30"
+]
+},
+"mod_temucraft_lostlands_garden_seed": {
+"FirstStage": [
+"num",
+null
+],
+"PlanterEntry": [
+"num",
+null
+],
+"SeedItem": [
+"num",
+null
+],
+"Text": [
+"str",
+"''"
+]
+},
+"mod_temucraft_lostlands_garden_stage": {
+"Entry": [
+"num",
+null
+],
+"Harvest": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"Kind": [
+"num",
+null
+],
+"MissingText": [
+"str",
+"''"
+],
+"NextEntry": [
+"num",
+null
+],
+"Seconds": [
+"num",
+"0"
+]
+},
+"mod_temucraft_lostlands_illusion": {
+"DisplayID": [
+"num",
+null
+],
+"Gender": [
+"num",
+"2"
+],
+"SpellID": [
+"num",
+null
+]
+},
+"mod_temucraft_lostlands_map_aura_removal": {
+"Comment": [
+"str",
+"''"
+],
+"MapID": [
+"num",
+null
+],
+"SpellID": [
+"num",
+null
+]
+},
+"mod_temucraft_lostlands_quest_cast": {
+"Comment": [
+"str",
+"''"
+],
+"ObjectiveIndex": [
+"num",
+null
+],
+"QuestID": [
+"num",
+null
+],
+"SpellID": [
+"num",
+null
+],
+"TargetClass": [
+"num",
+"0"
+],
+"TargetGM": [
+"num",
+"0"
+]
+},
+"mod_temucraft_lostlands_race": {
+"CheckpointObject": [
+"num",
+"0"
+],
+"ExplodeSpell": [
+"num",
+"0"
+],
+"ManagerEntry": [
+"num",
+null
+],
+"MountA": [
+"num",
+"0"
+],
+"MountB": [
+"num",
+"0"
+],
+"PrereqA": [
+"num",
+"0"
+],
+"PrereqB": [
+"num",
+"0"
+],
+"QuestA": [
+"num",
+"0"
+],
+"QuestB": [
+"num",
+"0"
+],
+"RaceID": [
+"num",
+null
+],
+"RequiredPlayers": [
+"num",
+"2"
+],
+"RootSpell": [
+"num",
+"0"
+],
+"SlowSpell": [
+"num",
+"0"
+],
+"SpeedSpell": [
+"num",
+"0"
+],
+"WinQuest": [
+"num",
+"0"
+]
+},
+"mod_temucraft_lostlands_race_checkpoint": {
+"Point": [
+"num",
+null
+],
+"RaceID": [
+"num",
+null
+],
+"X": [
+"num",
+null
+],
+"Y": [
+"num",
+null
+],
+"Z": [
+"num",
+null
+]
+},
+"mod_temucraft_lostlands_race_pool": {
+"Chance": [
+"num",
+"100"
+],
+"Entry": [
+"num",
+null
+],
+"RaceID": [
+"num",
+null
+],
+"Type": [
+"num",
+null
+],
+"X": [
+"num",
+null
+],
+"Y": [
+"num",
+null
+],
+"Z": [
+"num",
+null
+]
+},
+"mod_temucraft_lostlands_rental": {
+"Cost": [
+"num",
+"50"
+],
+"CreatureEntry": [
+"num",
+null
+],
+"SpellID": [
+"num",
+null
+]
+},
+"mod_temucraft_lostlands_spawn_scale": {
+"Guid": [
+"num",
+null
+],
+"Scale": [
+"num",
+"1"
+]
+},
+"mod_temucraft_lostlands_teleporter": {
+"CreatureEntry": [
+"num",
+null
+],
+"Map": [
+"num",
+null
+],
+"O": [
+"num",
+"0"
+],
+"RequiredQuest": [
+"num",
+"0"
+],
+"Slot": [
+"num",
+"0"
+],
+"Text": [
+"str",
+null
+],
+"X": [
+"num",
+null
+],
+"Y": [
+"num",
+null
+],
+"Z": [
+"num",
+null
+]
+},
+"mod_temucraft_lostlands_token_vendor": {
+"CreatureEntry": [
+"num",
+null
+],
+"ItemCount": [
+"num",
+"1"
+],
+"ItemID": [
+"num",
+null
+],
+"Slot": [
+"num",
+"0"
+],
+"SpellID": [
+"num",
+null
+],
+"Text": [
+"str",
+null
+]
+},
+"mod_temucraft_vanity_item": {
+"category": [
+"str",
+"''"
+],
+"item": [
+"num",
+null
+],
+"sort": [
+"num",
+"0"
+]
+},
+"module_string": {
+"id": [
+"num",
+null
+],
+"module": [
+"str",
+null
+],
+"string": [
+"str",
+null
+]
+},
+"npc_text": {
+"BroadcastTextID0": [
+"num",
+"0"
+],
+"BroadcastTextID1": [
+"num",
+"0"
+],
+"BroadcastTextID2": [
+"num",
+"0"
+],
+"BroadcastTextID3": [
+"num",
+"0"
+],
+"BroadcastTextID4": [
+"num",
+"0"
+],
+"BroadcastTextID5": [
+"num",
+"0"
+],
+"BroadcastTextID6": [
+"num",
+"0"
+],
+"BroadcastTextID7": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"Probability0": [
+"num",
+"0"
+],
+"Probability1": [
+"num",
+"0"
+],
+"Probability2": [
+"num",
+"0"
+],
+"Probability3": [
+"num",
+"0"
+],
+"Probability4": [
+"num",
+"0"
+],
+"Probability5": [
+"num",
+"0"
+],
+"Probability6": [
+"num",
+"0"
+],
+"Probability7": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"em0_0": [
+"num",
+"0"
+],
+"em0_1": [
+"num",
+"0"
+],
+"em0_2": [
+"num",
+"0"
+],
+"em0_3": [
+"num",
+"0"
+],
+"em0_4": [
+"num",
+"0"
+],
+"em0_5": [
+"num",
+"0"
+],
+"em1_0": [
+"num",
+"0"
+],
+"em1_1": [
+"num",
+"0"
+],
+"em1_2": [
+"num",
+"0"
+],
+"em1_3": [
+"num",
+"0"
+],
+"em1_4": [
+"num",
+"0"
+],
+"em1_5": [
+"num",
+"0"
+],
+"em2_0": [
+"num",
+"0"
+],
+"em2_1": [
+"num",
+"0"
+],
+"em2_2": [
+"num",
+"0"
+],
+"em2_3": [
+"num",
+"0"
+],
+"em2_4": [
+"num",
+"0"
+],
+"em2_5": [
+"num",
+"0"
+],
+"em3_0": [
+"num",
+"0"
+],
+"em3_1": [
+"num",
+"0"
+],
+"em3_2": [
+"num",
+"0"
+],
+"em3_3": [
+"num",
+"0"
+],
+"em3_4": [
+"num",
+"0"
+],
+"em3_5": [
+"num",
+"0"
+],
+"em4_0": [
+"num",
+"0"
+],
+"em4_1": [
+"num",
+"0"
+],
+"em4_2": [
+"num",
+"0"
+],
+"em4_3": [
+"num",
+"0"
+],
+"em4_4": [
+"num",
+"0"
+],
+"em4_5": [
+"num",
+"0"
+],
+"em5_0": [
+"num",
+"0"
+],
+"em5_1": [
+"num",
+"0"
+],
+"em5_2": [
+"num",
+"0"
+],
+"em5_3": [
+"num",
+"0"
+],
+"em5_4": [
+"num",
+"0"
+],
+"em5_5": [
+"num",
+"0"
+],
+"em6_0": [
+"num",
+"0"
+],
+"em6_1": [
+"num",
+"0"
+],
+"em6_2": [
+"num",
+"0"
+],
+"em6_3": [
+"num",
+"0"
+],
+"em6_4": [
+"num",
+"0"
+],
+"em6_5": [
+"num",
+"0"
+],
+"em7_0": [
+"num",
+"0"
+],
+"em7_1": [
+"num",
+"0"
+],
+"em7_2": [
+"num",
+"0"
+],
+"em7_3": [
+"num",
+"0"
+],
+"em7_4": [
+"num",
+"0"
+],
+"em7_5": [
+"num",
+"0"
+],
+"lang0": [
+"num",
+"0"
+],
+"lang1": [
+"num",
+"0"
+],
+"lang2": [
+"num",
+"0"
+],
+"lang3": [
+"num",
+"0"
+],
+"lang4": [
+"num",
+"0"
+],
+"lang5": [
+"num",
+"0"
+],
+"lang6": [
+"num",
+"0"
+],
+"lang7": [
+"num",
+"0"
+],
+"text0_0": [
+"str",
+"NULL"
+],
+"text0_1": [
+"str",
+"NULL"
+],
+"text1_0": [
+"str",
+"NULL"
+],
+"text1_1": [
+"str",
+"NULL"
+],
+"text2_0": [
+"str",
+"NULL"
+],
+"text2_1": [
+"str",
+"NULL"
+],
+"text3_0": [
+"str",
+"NULL"
+],
+"text3_1": [
+"str",
+"NULL"
+],
+"text4_0": [
+"str",
+"NULL"
+],
+"text4_1": [
+"str",
+"NULL"
+],
+"text5_0": [
+"str",
+"NULL"
+],
+"text5_1": [
+"str",
+"NULL"
+],
+"text6_0": [
+"str",
+"NULL"
+],
+"text6_1": [
+"str",
+"NULL"
+],
+"text7_0": [
+"str",
+"NULL"
+],
+"text7_1": [
+"str",
+"NULL"
+]
+},
+"npc_vendor": {
+"ExtendedCost": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+],
+"entry": [
+"num",
+"0"
+],
+"incrtime": [
+"num",
+"0"
+],
+"item": [
+"num",
+"0"
+],
+"maxcount": [
+"num",
+"0"
+],
+"slot": [
+"num",
+"0"
+]
+},
+"page_text": {
+"ID": [
+"num",
+"0"
+],
+"NextPageID": [
+"num",
+"0"
+],
+"Text": [
+"str",
+null
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"pickpocketing_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"quest_offer_reward": {
+"Emote1": [
+"num",
+"0"
+],
+"Emote2": [
+"num",
+"0"
+],
+"Emote3": [
+"num",
+"0"
+],
+"Emote4": [
+"num",
+"0"
+],
+"EmoteDelay1": [
+"num",
+"0"
+],
+"EmoteDelay2": [
+"num",
+"0"
+],
+"EmoteDelay3": [
+"num",
+"0"
+],
+"EmoteDelay4": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"RewardText": [
+"str",
+"NULL"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"quest_request_items": {
+"CompletionText": [
+"str",
+"NULL"
+],
+"EmoteOnComplete": [
+"num",
+"0"
+],
+"EmoteOnIncomplete": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"quest_template": {
+"AllowableRaces": [
+"num",
+"0"
+],
+"AreaDescription": [
+"str",
+"NULL"
+],
+"Flags": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"ItemDrop1": [
+"num",
+"0"
+],
+"ItemDrop2": [
+"num",
+"0"
+],
+"ItemDrop3": [
+"num",
+"0"
+],
+"ItemDrop4": [
+"num",
+"0"
+],
+"ItemDropQuantity1": [
+"num",
+"0"
+],
+"ItemDropQuantity2": [
+"num",
+"0"
+],
+"ItemDropQuantity3": [
+"num",
+"0"
+],
+"ItemDropQuantity4": [
+"num",
+"0"
+],
+"LogDescription": [
+"str",
+"NULL"
+],
+"LogTitle": [
+"str",
+"NULL"
+],
+"MinLevel": [
+"num",
+"0"
+],
+"ObjectiveText1": [
+"str",
+"NULL"
+],
+"ObjectiveText2": [
+"str",
+"NULL"
+],
+"ObjectiveText3": [
+"str",
+"NULL"
+],
+"ObjectiveText4": [
+"str",
+"NULL"
+],
+"POIContinent": [
+"num",
+"0"
+],
+"POIPriority": [
+"num",
+"0"
+],
+"POIx": [
+"num",
+"0"
+],
+"POIy": [
+"num",
+"0"
+],
+"QuestCompletionLog": [
+"str",
+"NULL"
+],
+"QuestDescription": [
+"str",
+"NULL"
+],
+"QuestInfoID": [
+"num",
+"0"
+],
+"QuestLevel": [
+"num",
+"1"
+],
+"QuestSortID": [
+"num",
+"0"
+],
+"QuestType": [
+"num",
+"2"
+],
+"RequiredFactionId1": [
+"num",
+"0"
+],
+"RequiredFactionId2": [
+"num",
+"0"
+],
+"RequiredFactionValue1": [
+"num",
+"0"
+],
+"RequiredFactionValue2": [
+"num",
+"0"
+],
+"RequiredItemCount1": [
+"num",
+"0"
+],
+"RequiredItemCount2": [
+"num",
+"0"
+],
+"RequiredItemCount3": [
+"num",
+"0"
+],
+"RequiredItemCount4": [
+"num",
+"0"
+],
+"RequiredItemCount5": [
+"num",
+"0"
+],
+"RequiredItemCount6": [
+"num",
+"0"
+],
+"RequiredItemId1": [
+"num",
+"0"
+],
+"RequiredItemId2": [
+"num",
+"0"
+],
+"RequiredItemId3": [
+"num",
+"0"
+],
+"RequiredItemId4": [
+"num",
+"0"
+],
+"RequiredItemId5": [
+"num",
+"0"
+],
+"RequiredItemId6": [
+"num",
+"0"
+],
+"RequiredNpcOrGo1": [
+"num",
+"0"
+],
+"RequiredNpcOrGo2": [
+"num",
+"0"
+],
+"RequiredNpcOrGo3": [
+"num",
+"0"
+],
+"RequiredNpcOrGo4": [
+"num",
+"0"
+],
+"RequiredNpcOrGoCount1": [
+"num",
+"0"
+],
+"RequiredNpcOrGoCount2": [
+"num",
+"0"
+],
+"RequiredNpcOrGoCount3": [
+"num",
+"0"
+],
+"RequiredNpcOrGoCount4": [
+"num",
+"0"
+],
+"RequiredPlayerKills": [
+"num",
+"0"
+],
+"RewardAmount1": [
+"num",
+"0"
+],
+"RewardAmount2": [
+"num",
+"0"
+],
+"RewardAmount3": [
+"num",
+"0"
+],
+"RewardAmount4": [
+"num",
+"0"
+],
+"RewardArenaPoints": [
+"num",
+"0"
+],
+"RewardChoiceItemID1": [
+"num",
+"0"
+],
+"RewardChoiceItemID2": [
+"num",
+"0"
+],
+"RewardChoiceItemID3": [
+"num",
+"0"
+],
+"RewardChoiceItemID4": [
+"num",
+"0"
+],
+"RewardChoiceItemID5": [
+"num",
+"0"
+],
+"RewardChoiceItemID6": [
+"num",
+"0"
+],
+"RewardChoiceItemQuantity1": [
+"num",
+"0"
+],
+"RewardChoiceItemQuantity2": [
+"num",
+"0"
+],
+"RewardChoiceItemQuantity3": [
+"num",
+"0"
+],
+"RewardChoiceItemQuantity4": [
+"num",
+"0"
+],
+"RewardChoiceItemQuantity5": [
+"num",
+"0"
+],
+"RewardChoiceItemQuantity6": [
+"num",
+"0"
+],
+"RewardDisplaySpell": [
+"num",
+"0"
+],
+"RewardFactionID1": [
+"num",
+"0"
+],
+"RewardFactionID2": [
+"num",
+"0"
+],
+"RewardFactionID3": [
+"num",
+"0"
+],
+"RewardFactionID4": [
+"num",
+"0"
+],
+"RewardFactionID5": [
+"num",
+"0"
+],
+"RewardFactionOverride1": [
+"num",
+"0"
+],
+"RewardFactionOverride2": [
+"num",
+"0"
+],
+"RewardFactionOverride3": [
+"num",
+"0"
+],
+"RewardFactionOverride4": [
+"num",
+"0"
+],
+"RewardFactionOverride5": [
+"num",
+"0"
+],
+"RewardFactionValue1": [
+"num",
+"0"
+],
+"RewardFactionValue2": [
+"num",
+"0"
+],
+"RewardFactionValue3": [
+"num",
+"0"
+],
+"RewardFactionValue4": [
+"num",
+"0"
+],
+"RewardFactionValue5": [
+"num",
+"0"
+],
+"RewardHonor": [
+"num",
+"0"
+],
+"RewardItem1": [
+"num",
+"0"
+],
+"RewardItem2": [
+"num",
+"0"
+],
+"RewardItem3": [
+"num",
+"0"
+],
+"RewardItem4": [
+"num",
+"0"
+],
+"RewardKillHonor": [
+"num",
+"0"
+],
+"RewardMoney": [
+"num",
+"0"
+],
+"RewardMoneyDifficulty": [
+"num",
+"0"
+],
+"RewardNextQuest": [
+"num",
+"0"
+],
+"RewardSpell": [
+"num",
+"0"
+],
+"RewardTalents": [
+"num",
+"0"
+],
+"RewardTitle": [
+"num",
+"0"
+],
+"RewardXPDifficulty": [
+"num",
+"0"
+],
+"StartItem": [
+"num",
+"0"
+],
+"SuggestedGroupNum": [
+"num",
+"0"
+],
+"TimeAllowed": [
+"num",
+"0"
+],
+"Unknown0": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"NULL"
+]
+},
+"quest_template_addon": {
+"AllowableClasses": [
+"num",
+"0"
+],
+"BreadcrumbForQuestId": [
+"num",
+"0"
+],
+"ExclusiveGroup": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"MaxLevel": [
+"num",
+"0"
+],
+"NextQuestID": [
+"num",
+"0"
+],
+"PrevQuestID": [
+"num",
+"0"
+],
+"ProvidedItemCount": [
+"num",
+"0"
+],
+"RequiredMaxRepFaction": [
+"num",
+"0"
+],
+"RequiredMaxRepValue": [
+"num",
+"0"
+],
+"RequiredMinRepFaction": [
+"num",
+"0"
+],
+"RequiredMinRepValue": [
+"num",
+"0"
+],
+"RequiredSkillID": [
+"num",
+"0"
+],
+"RequiredSkillPoints": [
+"num",
+"0"
+],
+"RewardMailDelay": [
+"num",
+"0"
+],
+"RewardMailTemplateID": [
+"num",
+"0"
+],
+"SourceSpellID": [
+"num",
+"0"
+],
+"SpecialFlags": [
+"num",
+"0"
+]
+},
+"reference_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"skinning_loot_template": {
+"Chance": [
+"num",
+"100"
+],
+"Comment": [
+"str",
+"NULL"
+],
+"Entry": [
+"num",
+"0"
+],
+"GroupId": [
+"num",
+"0"
+],
+"Item": [
+"num",
+"0"
+],
+"LootMode": [
+"num",
+"1"
+],
+"MaxCount": [
+"num",
+"1"
+],
+"MinCount": [
+"num",
+"1"
+],
+"QuestRequired": [
+"num",
+"0"
+],
+"Reference": [
+"num",
+"0"
+]
+},
+"spell_dbc": {
+"ActiveIconID": [
+"num",
+"0"
+],
+"Attributes": [
+"num",
+"0"
+],
+"AttributesEx": [
+"num",
+"0"
+],
+"AttributesEx2": [
+"num",
+"0"
+],
+"AttributesEx3": [
+"num",
+"0"
+],
+"AttributesEx4": [
+"num",
+"0"
+],
+"AttributesEx5": [
+"num",
+"0"
+],
+"AttributesEx6": [
+"num",
+"0"
+],
+"AttributesEx7": [
+"num",
+"0"
+],
+"AuraDescription_Lang_Mask": [
+"num",
+"0"
+],
+"AuraDescription_Lang_Unk": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_deDE": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_enCN": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_enGB": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_enTW": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_enUS": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_esES": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_esMX": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_frFR": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_itIT": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_koKR": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_ptBR": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_ptPT": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_ruRU": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_zhCN": [
+"str",
+"NULL"
+],
+"AuraDescription_Lang_zhTW": [
+"str",
+"NULL"
+],
+"AuraInterruptFlags": [
+"num",
+"0"
+],
+"BaseLevel": [
+"num",
+"0"
+],
+"CasterAuraSpell": [
+"num",
+"0"
+],
+"CasterAuraState": [
+"num",
+"0"
+],
+"CastingTimeIndex": [
+"num",
+"0"
+],
+"Category": [
+"num",
+"0"
+],
+"CategoryRecoveryTime": [
+"num",
+"0"
+],
+"ChannelInterruptFlags": [
+"num",
+"0"
+],
+"CumulativeAura": [
+"num",
+"0"
+],
+"DefenseType": [
+"num",
+"0"
+],
+"Description_Lang_Mask": [
+"num",
+"0"
+],
+"Description_Lang_Unk": [
+"str",
+"NULL"
+],
+"Description_Lang_deDE": [
+"str",
+"NULL"
+],
+"Description_Lang_enCN": [
+"str",
+"NULL"
+],
+"Description_Lang_enGB": [
+"str",
+"NULL"
+],
+"Description_Lang_enTW": [
+"str",
+"NULL"
+],
+"Description_Lang_enUS": [
+"str",
+"NULL"
+],
+"Description_Lang_esES": [
+"str",
+"NULL"
+],
+"Description_Lang_esMX": [
+"str",
+"NULL"
+],
+"Description_Lang_frFR": [
+"str",
+"NULL"
+],
+"Description_Lang_itIT": [
+"str",
+"NULL"
+],
+"Description_Lang_koKR": [
+"str",
+"NULL"
+],
+"Description_Lang_ptBR": [
+"str",
+"NULL"
+],
+"Description_Lang_ptPT": [
+"str",
+"NULL"
+],
+"Description_Lang_ruRU": [
+"str",
+"NULL"
+],
+"Description_Lang_zhCN": [
+"str",
+"NULL"
+],
+"Description_Lang_zhTW": [
+"str",
+"NULL"
+],
+"DispelType": [
+"num",
+"0"
+],
+"DurationIndex": [
+"num",
+"0"
+],
+"EffectAuraPeriod_1": [
+"num",
+"0"
+],
+"EffectAuraPeriod_2": [
+"num",
+"0"
+],
+"EffectAuraPeriod_3": [
+"num",
+"0"
+],
+"EffectAura_1": [
+"num",
+"0"
+],
+"EffectAura_2": [
+"num",
+"0"
+],
+"EffectAura_3": [
+"num",
+"0"
+],
+"EffectBasePoints_1": [
+"num",
+"0"
+],
+"EffectBasePoints_2": [
+"num",
+"0"
+],
+"EffectBasePoints_3": [
+"num",
+"0"
+],
+"EffectBonusMultiplier_1": [
+"num",
+"0"
+],
+"EffectBonusMultiplier_2": [
+"num",
+"0"
+],
+"EffectBonusMultiplier_3": [
+"num",
+"0"
+],
+"EffectChainAmplitude_1": [
+"num",
+"0"
+],
+"EffectChainAmplitude_2": [
+"num",
+"0"
+],
+"EffectChainAmplitude_3": [
+"num",
+"0"
+],
+"EffectChainTargets_1": [
+"num",
+"0"
+],
+"EffectChainTargets_2": [
+"num",
+"0"
+],
+"EffectChainTargets_3": [
+"num",
+"0"
+],
+"EffectDieSides_1": [
+"num",
+"0"
+],
+"EffectDieSides_2": [
+"num",
+"0"
+],
+"EffectDieSides_3": [
+"num",
+"0"
+],
+"EffectItemType_1": [
+"num",
+"0"
+],
+"EffectItemType_2": [
+"num",
+"0"
+],
+"EffectItemType_3": [
+"num",
+"0"
+],
+"EffectMechanic_1": [
+"num",
+"0"
+],
+"EffectMechanic_2": [
+"num",
+"0"
+],
+"EffectMechanic_3": [
+"num",
+"0"
+],
+"EffectMiscValueB_1": [
+"num",
+"0"
+],
+"EffectMiscValueB_2": [
+"num",
+"0"
+],
+"EffectMiscValueB_3": [
+"num",
+"0"
+],
+"EffectMiscValue_1": [
+"num",
+"0"
+],
+"EffectMiscValue_2": [
+"num",
+"0"
+],
+"EffectMiscValue_3": [
+"num",
+"0"
+],
+"EffectMultipleValue_1": [
+"num",
+"0"
+],
+"EffectMultipleValue_2": [
+"num",
+"0"
+],
+"EffectMultipleValue_3": [
+"num",
+"0"
+],
+"EffectPointsPerCombo_1": [
+"num",
+"0"
+],
+"EffectPointsPerCombo_2": [
+"num",
+"0"
+],
+"EffectPointsPerCombo_3": [
+"num",
+"0"
+],
+"EffectRadiusIndex_1": [
+"num",
+"0"
+],
+"EffectRadiusIndex_2": [
+"num",
+"0"
+],
+"EffectRadiusIndex_3": [
+"num",
+"0"
+],
+"EffectRealPointsPerLevel_1": [
+"num",
+"0"
+],
+"EffectRealPointsPerLevel_2": [
+"num",
+"0"
+],
+"EffectRealPointsPerLevel_3": [
+"num",
+"0"
+],
+"EffectSpellClassMaskA_1": [
+"num",
+"0"
+],
+"EffectSpellClassMaskA_2": [
+"num",
+"0"
+],
+"EffectSpellClassMaskA_3": [
+"num",
+"0"
+],
+"EffectSpellClassMaskB_1": [
+"num",
+"0"
+],
+"EffectSpellClassMaskB_2": [
+"num",
+"0"
+],
+"EffectSpellClassMaskB_3": [
+"num",
+"0"
+],
+"EffectSpellClassMaskC_1": [
+"num",
+"0"
+],
+"EffectSpellClassMaskC_2": [
+"num",
+"0"
+],
+"EffectSpellClassMaskC_3": [
+"num",
+"0"
+],
+"EffectTriggerSpell_1": [
+"num",
+"0"
+],
+"EffectTriggerSpell_2": [
+"num",
+"0"
+],
+"EffectTriggerSpell_3": [
+"num",
+"0"
+],
+"Effect_1": [
+"num",
+"0"
+],
+"Effect_2": [
+"num",
+"0"
+],
+"Effect_3": [
+"num",
+"0"
+],
+"EquippedItemClass": [
+"num",
+"0"
+],
+"EquippedItemInvTypes": [
+"num",
+"0"
+],
+"EquippedItemSubclass": [
+"num",
+"0"
+],
+"ExcludeCasterAuraSpell": [
+"num",
+"0"
+],
+"ExcludeCasterAuraState": [
+"num",
+"0"
+],
+"ExcludeTargetAuraSpell": [
+"num",
+"0"
+],
+"ExcludeTargetAuraState": [
+"num",
+"0"
+],
+"FacingCasterFlags": [
+"num",
+"0"
+],
+"ID": [
+"num",
+"0"
+],
+"ImplicitTargetA_1": [
+"num",
+"0"
+],
+"ImplicitTargetA_2": [
+"num",
+"0"
+],
+"ImplicitTargetA_3": [
+"num",
+"0"
+],
+"ImplicitTargetB_1": [
+"num",
+"0"
+],
+"ImplicitTargetB_2": [
+"num",
+"0"
+],
+"ImplicitTargetB_3": [
+"num",
+"0"
+],
+"InterruptFlags": [
+"num",
+"0"
+],
+"ManaCost": [
+"num",
+"0"
+],
+"ManaCostPct": [
+"num",
+"0"
+],
+"ManaCostPerLevel": [
+"num",
+"0"
+],
+"ManaPerSecond": [
+"num",
+"0"
+],
+"ManaPerSecondPerLevel": [
+"num",
+"0"
+],
+"MaxLevel": [
+"num",
+"0"
+],
+"MaxTargetLevel": [
+"num",
+"0"
+],
+"MaxTargets": [
+"num",
+"0"
+],
+"Mechanic": [
+"num",
+"0"
+],
+"MinFactionID": [
+"num",
+"0"
+],
+"MinReputation": [
+"num",
+"0"
+],
+"ModalNextSpell": [
+"num",
+"0"
+],
+"NameSubtext_Lang_Mask": [
+"num",
+"0"
+],
+"NameSubtext_Lang_Unk": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_deDE": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_enCN": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_enGB": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_enTW": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_enUS": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_esES": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_esMX": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_frFR": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_itIT": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_koKR": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_ptBR": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_ptPT": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_ruRU": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_zhCN": [
+"str",
+"NULL"
+],
+"NameSubtext_Lang_zhTW": [
+"str",
+"NULL"
+],
+"Name_Lang_Mask": [
+"num",
+"0"
+],
+"Name_Lang_Unk": [
+"str",
+"NULL"
+],
+"Name_Lang_deDE": [
+"str",
+"NULL"
+],
+"Name_Lang_enCN": [
+"str",
+"NULL"
+],
+"Name_Lang_enGB": [
+"str",
+"NULL"
+],
+"Name_Lang_enTW": [
+"str",
+"NULL"
+],
+"Name_Lang_enUS": [
+"str",
+"NULL"
+],
+"Name_Lang_esES": [
+"str",
+"NULL"
+],
+"Name_Lang_esMX": [
+"str",
+"NULL"
+],
+"Name_Lang_frFR": [
+"str",
+"NULL"
+],
+"Name_Lang_itIT": [
+"str",
+"NULL"
+],
+"Name_Lang_koKR": [
+"str",
+"NULL"
+],
+"Name_Lang_ptBR": [
+"str",
+"NULL"
+],
+"Name_Lang_ptPT": [
+"str",
+"NULL"
+],
+"Name_Lang_ruRU": [
+"str",
+"NULL"
+],
+"Name_Lang_zhCN": [
+"str",
+"NULL"
+],
+"Name_Lang_zhTW": [
+"str",
+"NULL"
+],
+"PowerDisplayID": [
+"num",
+"0"
+],
+"PowerType": [
+"num",
+"0"
+],
+"PreventionType": [
+"num",
+"0"
+],
+"ProcChance": [
+"num",
+"0"
+],
+"ProcCharges": [
+"num",
+"0"
+],
+"ProcTypeMask": [
+"num",
+"0"
+],
+"RangeIndex": [
+"num",
+"0"
+],
+"ReagentCount_1": [
+"num",
+"0"
+],
+"ReagentCount_2": [
+"num",
+"0"
+],
+"ReagentCount_3": [
+"num",
+"0"
+],
+"ReagentCount_4": [
+"num",
+"0"
+],
+"ReagentCount_5": [
+"num",
+"0"
+],
+"ReagentCount_6": [
+"num",
+"0"
+],
+"ReagentCount_7": [
+"num",
+"0"
+],
+"ReagentCount_8": [
+"num",
+"0"
+],
+"Reagent_1": [
+"num",
+"0"
+],
+"Reagent_2": [
+"num",
+"0"
+],
+"Reagent_3": [
+"num",
+"0"
+],
+"Reagent_4": [
+"num",
+"0"
+],
+"Reagent_5": [
+"num",
+"0"
+],
+"Reagent_6": [
+"num",
+"0"
+],
+"Reagent_7": [
+"num",
+"0"
+],
+"Reagent_8": [
+"num",
+"0"
+],
+"RecoveryTime": [
+"num",
+"0"
+],
+"RequiredAreasID": [
+"num",
+"0"
+],
+"RequiredAuraVision": [
+"num",
+"0"
+],
+"RequiredTotemCategoryID_1": [
+"num",
+"0"
+],
+"RequiredTotemCategoryID_2": [
+"num",
+"0"
+],
+"RequiresSpellFocus": [
+"num",
+"0"
+],
+"RuneCostID": [
+"num",
+"0"
+],
+"SchoolMask": [
+"num",
+"0"
+],
+"ShapeshiftExclude": [
+"num",
+"0"
+],
+"ShapeshiftMask": [
+"num",
+"0"
+],
+"Speed": [
+"num",
+"0"
+],
+"SpellClassMask_1": [
+"num",
+"0"
+],
+"SpellClassMask_2": [
+"num",
+"0"
+],
+"SpellClassMask_3": [
+"num",
+"0"
+],
+"SpellClassSet": [
+"num",
+"0"
+],
+"SpellDescriptionVariableID": [
+"num",
+"0"
+],
+"SpellDifficultyID": [
+"num",
+"0"
+],
+"SpellIconID": [
+"num",
+"0"
+],
+"SpellLevel": [
+"num",
+"0"
+],
+"SpellMissileID": [
+"num",
+"0"
+],
+"SpellPriority": [
+"num",
+"0"
+],
+"SpellVisualID_1": [
+"num",
+"0"
+],
+"SpellVisualID_2": [
+"num",
+"0"
+],
+"StanceBarOrder": [
+"num",
+"0"
+],
+"StartRecoveryCategory": [
+"num",
+"0"
+],
+"StartRecoveryTime": [
+"num",
+"0"
+],
+"TargetAuraSpell": [
+"num",
+"0"
+],
+"TargetAuraState": [
+"num",
+"0"
+],
+"TargetCreatureType": [
+"num",
+"0"
+],
+"Targets": [
+"num",
+"0"
+],
+"Totem_1": [
+"num",
+"0"
+],
+"Totem_2": [
+"num",
+"0"
+],
+"unk_320_2": [
+"num",
+"0"
+],
+"unk_320_3": [
+"num",
+"0"
+]
+},
+"trainer": {
+"Greeting": [
+"str",
+"NULL"
+],
+"Id": [
+"num",
+"0"
+],
+"Requirement": [
+"num",
+"0"
+],
+"Type": [
+"num",
+"2"
+],
+"VerifiedBuild": [
+"num",
+"0"
+]
+},
+"trainer_spell": {
+"MoneyCost": [
+"num",
+"0"
+],
+"ReqAbility1": [
+"num",
+"0"
+],
+"ReqAbility2": [
+"num",
+"0"
+],
+"ReqAbility3": [
+"num",
+"0"
+],
+"ReqLevel": [
+"num",
+"0"
+],
+"ReqSkillLine": [
+"num",
+"0"
+],
+"ReqSkillRank": [
+"num",
+"0"
+],
+"SpellId": [
+"num",
+"0"
+],
+"TrainerId": [
+"num",
+"0"
+],
+"VerifiedBuild": [
+"num",
+"0"
+]
+},
+"waypoint_data": {
+"action": [
+"num",
+"0"
+],
+"action_chance": [
+"num",
+"100"
+],
+"delay": [
+"num",
+"0"
+],
+"id": [
+"num",
+"0"
+],
+"move_type": [
+"num",
+"0"
+],
+"orientation": [
+"num",
+"NULL"
+],
+"point": [
+"num",
+"0"
+],
+"position_x": [
+"num",
+"0"
+],
+"position_y": [
+"num",
+"0"
+],
+"position_z": [
+"num",
+"0"
+],
+"smoothTransition": [
+"num",
+"0"
+],
+"velocity": [
+"num",
+"0"
+],
+"wpguid": [
+"num",
+"0"
+]
+}
+}
