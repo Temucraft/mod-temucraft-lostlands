@@ -25,7 +25,7 @@ see "Maps" below.
 | world | `creaturedisplayinfo_dbc`, `creaturedisplayinfoextra_dbc`, `creaturemodeldata_dbc`, `itemdisplayinfo_dbc`, `gameobjectdisplayinfo_dbc`, `item_dbc` | models | displays 1200000 and up, model data 45000-45004, **fixed** |
 | world | `faction_dbc`, `factiontemplate_dbc` | 23 factions, 51 templates | factions 2300-2322, templates 3000-3050, **fixed** |
 | world | `mod_temucraft_lostlands_*` | feature data | see below |
-| characters | `mod_temucraft_lostlands_account_collection` | per account | |
+| characters | `mod_temucraft_account_collection` (kind 10) | per account | |
 | world | `creature_template` (stock) | 301 stock creatures get the quest giver flag | they give or take a Lost Lands quest |
 
 Client DBC rows (same IDs): `Spell`, `SpellIcon` (3300000-3300069), `Item`, `ItemDisplayInfo`, `CreatureDisplayInfo`,

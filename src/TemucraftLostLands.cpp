@@ -128,7 +128,7 @@ namespace
 
     void SaveCollectionSpell(Player* player, uint32 spellId)
     {
-        CharacterDatabase.Execute("INSERT IGNORE INTO `mod_temucraft_lostlands_account_collection` (`AccountID`, `SpellID`) VALUES ({}, {})",
+        CharacterDatabase.Execute("INSERT IGNORE INTO `mod_temucraft_account_collection` (`account`, `kind`, `id`) VALUES ({}, 10, {})",
             player->GetSession()->GetAccountId(), spellId);
     }
 
@@ -203,7 +203,7 @@ public:
     {
         if (!settings.enable || !settings.accountWide)
             return;
-        QueryResult r = CharacterDatabase.Query("SELECT `SpellID` FROM `mod_temucraft_lostlands_account_collection` WHERE `AccountID` = {}",
+        QueryResult r = CharacterDatabase.Query("SELECT `id` FROM `mod_temucraft_account_collection` WHERE `account` = {} AND `kind` = 10",
             player->GetSession()->GetAccountId());
         if (!r)
             return;
