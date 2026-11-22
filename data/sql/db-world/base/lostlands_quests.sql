@@ -10,6 +10,11 @@ DELETE FROM `creature_queststarter` WHERE `quest` BETWEEN @QUEST AND @QUEST+2464
 DELETE FROM `creature_questender` WHERE `quest` BETWEEN @QUEST AND @QUEST+2464;
 DELETE FROM `gameobject_queststarter` WHERE `quest` BETWEEN @QUEST AND @QUEST+2464;
 DELETE FROM `gameobject_questender` WHERE `quest` BETWEEN @QUEST AND @QUEST+2464;
+-- our creatures and objects also start and end stock quests
+DELETE FROM `creature_queststarter` WHERE `id` BETWEEN @CRE AND @CRE+5188;
+DELETE FROM `creature_questender` WHERE `id` BETWEEN @CRE AND @CRE+5188;
+DELETE FROM `gameobject_queststarter` WHERE `id` BETWEEN @GO AND @GO+12124;
+DELETE FROM `gameobject_questender` WHERE `id` BETWEEN @GO AND @GO+12124;
 CREATE TEMPORARY TABLE `tmp_shrink` LIKE `quest_template`;
 INSERT INTO `tmp_shrink` (`ID`,`QuestLevel`,`MinLevel`,`QuestSortID`,`RewardNextQuest`,`RewardFactionID1`,`RewardFactionOverride1`,`AllowableRaces`,`LogTitle`,`LogDescription`,`QuestDescription`,`RequiredItemId1`,`RequiredItemCount1`) VALUES
 ((@QUEST+0),45,40,222,(@QUEST+1),0,0,32,'Swift as a Swifthoof','Find Samantha Swifthoof.','Ah, I\'ve been expecting my Rah\'pawene, Samantha Swifthoof and she\'s yet to come! I\'m confused...$B$BCan you help me and find her? Last time we spoke she was so much excited to see the new places and travel at her leisure from a port to some distant forests and northern regions of the Eastern Kingdoms, alas, the only port I know nearby is the Ratchet.$B$BI\'m most certain Samantha braved to the ferry and swam to the Booty Bay.$B$BWhere could she travel to from there I do not know. Perhaps you could find her for me? Just to be sure she\'s fine...',0,0),
