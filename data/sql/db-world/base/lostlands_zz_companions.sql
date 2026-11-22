@@ -2,7 +2,7 @@
 -- and descriptions for them and Coco. Name starts with lostlands_zz so it runs after lostlands_features.sql (which
 -- clears the collection table) and lostlands_shop.sql (Coco's item). Re-runnable.
 --   items 610209-610211 (pet carrier icon, like Coco), creatures 601510-601512, collection type 2 (whole account)
--- Looks: Aramis the stock dog (display 10209, like Coco), Taiga the black pig (16357), Edwards the pink pig (16358, smaller).
+-- Looks (chosen by the user): Aramis display 11709, Taiga the golden pig (21304), Edwards the silver pig (22938).
 
 DELETE FROM `creature_template_model` WHERE `CreatureID` BETWEEN 601510 AND 601512;
 DELETE FROM `creature_template` WHERE `entry` BETWEEN 601510 AND 601512;
@@ -11,9 +11,9 @@ INSERT INTO `creature_template` (`entry`, `name`, `subname`, `minlevel`, `maxlev
 (601511, 'Taiga', '', 1, 1, 188, 0, 1, 1.14286, 1, 768, 2048, 12, 2),
 (601512, 'Edwards', '', 1, 1, 188, 0, 1, 1.14286, 1, 768, 2048, 12, 2);
 INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`) VALUES
-(601510, 0, 10209, 1, 1),
-(601511, 0, 16357, 1, 1),
-(601512, 0, 16358, 0.8, 1);
+(601510, 0, 11709, 1, 1),
+(601511, 0, 21304, 1, 1),
+(601512, 0, 22938, 1, 1);
 
 -- the server's copy of the summon spells (same as Coco's 1260008, summoning their own creature)
 DELETE FROM `spell_dbc` WHERE `ID` BETWEEN 95014 AND 95016;
