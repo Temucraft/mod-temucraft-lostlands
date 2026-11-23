@@ -17,6 +17,7 @@
  * Written for AzerothCore; the ideas follow features of a 1.12 server, the code is new.
  */
 
+#include "TemucraftLocked.h"
 #include "Chat.h"
 #include "TemucraftModuleText.h"
 #include "ChatCommand.h"
@@ -55,7 +56,7 @@ namespace
     struct CastObjective { uint32 quest; uint8 index; uint8 targetClass; bool targetGM; };
     std::unordered_map<uint32, std::vector<CastObjective>> sCastObjectives; // spell -> objectives
     std::unordered_map<uint32, std::vector<uint32>> sMapAuraRemoval;   // map -> auras
-    std::unordered_set<ObjectGuid> sIllusioned;                        // players wearing an illusion
+    Temucraft::LockedSet<ObjectGuid> sIllusioned;                        // players wearing an illusion
 
     void LoadTables()
     {
