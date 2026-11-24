@@ -131,6 +131,16 @@ the `extra-maps` client patch and need map, vmap and mmap extraction; without th
   kind (small crocolisks and elekks, skunk, wolpertinger, frog, squirrel, owl, treant, bat, parrot, ooze, moth...), and
   the same tool points the spells at them. The rows are also in the release patch-T.
 
+## Quests that can't be done yet
+
+`lostlands_zzz_quest_check.sql` runs last and hides every Lost Lands quest that can't be done with the spawns in the
+database: no spawned quest giver (or findable item that starts it), no spawned quest ender, a creature or object it
+asks for that has no spawn and no summon, or one of our items it asks for that can't be found anywhere. Hidden quests
+get a `disables` row (type 1, comment "lostlands quest check: ..."): they are not shown and can't be picked up. The
+reasons are in `mod_temucraft_lostlands_quest_check`. Run the file again after adding spawns (for example
+`data/sql/optional/lostlands_spawns_eastern_kingdoms_kalimdor.sql`), then `.reload disables` or restart. Creatures
+that only a C++ script spawns are not seen by the check: put such quests in `@KEEP` at the top of the file.
+
 ## Texts and translations
 
 The 12 player-facing texts (chat messages, gossip options) are in the `module_string` table under the module name
