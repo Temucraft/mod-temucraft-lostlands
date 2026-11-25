@@ -22831,6 +22831,9 @@ INSERT INTO `tmp_shrink` (`TrainerId`,`SpellId`,`MoneyCost`,`ReqLevel`) VALUES
 (3480,51603,28000,48),
 (3480,47294,36000,54),
 (3480,51605,50000,60);
+-- 1.18.1 spells that were not ported keep their 1.18.1 ids, which in 3.3.5 are unrelated spells (Shield of the Blue,
+-- Suicide (No Log), test and boss spells...): trainers must not teach them. Apprentice Riding (33389) is real.
+DELETE FROM `tmp_shrink` WHERE `SpellId` BETWEEN 30000 AND 1199999 AND `SpellId` <> 33389;
 UPDATE `tmp_shrink` SET `TrainerId`=`TrainerId`+@CRE;
 INSERT INTO `trainer_spell` SELECT * FROM `tmp_shrink`;
 DROP TEMPORARY TABLE `tmp_shrink`;
@@ -23788,6 +23791,9 @@ INSERT INTO `tmp_shrink` (`TrainerId`,`SpellId`,`MoneyCost`,`ReqSkillLine`,`ReqS
 (3136,3280,500,129,50,0),
 (3147,3412,500,185,50,0),
 (3312,3412,500,185,50,10);
+-- 1.18.1 spells that were not ported keep their 1.18.1 ids, which in 3.3.5 are unrelated spells (Shield of the Blue,
+-- Suicide (No Log), test and boss spells...): trainers must not teach them. Apprentice Riding (33389) is real.
+DELETE FROM `tmp_shrink` WHERE `SpellId` BETWEEN 30000 AND 1199999 AND `SpellId` <> 33389;
 UPDATE `tmp_shrink` SET `TrainerId`=`TrainerId`+@CRE;
 INSERT INTO `trainer_spell` SELECT * FROM `tmp_shrink`;
 DROP TEMPORARY TABLE `tmp_shrink`;

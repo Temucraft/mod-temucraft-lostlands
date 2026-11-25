@@ -22136,3 +22136,6 @@ UPDATE `spell_dbc` SET `EffectMiscValue_1` = `EffectMiscValue_1` - 37050 + 12052
   AND `EffectMiscValue_1` BETWEEN 37050 AND 37072;
 UPDATE `spell_dbc` SET `Effect_1` = 28, `EffectMiscValueB_1` = 41 WHERE `ID` BETWEEN 1200000 AND 1202189 AND `Effect_1` = 97 AND `ImplicitTargetA_1` = 32
   AND `EffectMiscValue_1` BETWEEN 1200000 AND 1205222;
+-- Holy Strike (1200001, 1200005, 1200011): visual 7934 is a 1.18.1 id; in 3.3.5 it is Greater Mass Teleport (huge and
+-- bright). Crusader Strike's strike visual instead (same in the client patch-R Spell.dbc).
+UPDATE `spell_dbc` SET `SpellVisualID_1` = 8316 WHERE `ID` IN (1200001, 1200005, 1200011);
