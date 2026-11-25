@@ -31,9 +31,7 @@ CREATE TABLE `mod_temucraft_lostlands_quest_check` (
 -- creatures that are there: spawned, summoned, or that give kill credit through a spawned creature
 DROP TEMPORARY TABLE IF EXISTS `tmp_ll_cre`;
 CREATE TEMPORARY TABLE `tmp_ll_cre` (`entry` int unsigned NOT NULL PRIMARY KEY);
-INSERT IGNORE INTO `tmp_ll_cre` SELECT `id1` FROM `creature` WHERE `id1` <> 0;
-INSERT IGNORE INTO `tmp_ll_cre` SELECT `id2` FROM `creature` WHERE `id2` <> 0;
-INSERT IGNORE INTO `tmp_ll_cre` SELECT `id3` FROM `creature` WHERE `id3` <> 0;
+INSERT IGNORE INTO `tmp_ll_cre` SELECT `id` FROM `creature` WHERE `id` <> 0;
 INSERT IGNORE INTO `tmp_ll_cre` SELECT `action_param1` FROM `smart_scripts` WHERE `action_type` = 12 AND `action_param1` <> 0;
 INSERT IGNORE INTO `tmp_ll_cre` SELECT `entry` FROM `creature_summon_groups` WHERE `entry` <> 0;
 INSERT IGNORE INTO `tmp_ll_cre` SELECT `EffectMiscValue_1` FROM `spell_dbc` WHERE `Effect_1` IN (28, 41, 42, 56, 112) AND `EffectMiscValue_1` > 0;
