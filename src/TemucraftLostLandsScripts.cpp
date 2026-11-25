@@ -84,8 +84,11 @@ namespace LostLands
     float sRestRadius = 10.0f;
     float sRestRate = 0.000575f;   // share of the level's experience added per second
 
+    void CreateRaceRuns();
+
     void Load()
     {
+
         sTeleports.clear(); sTokenBuffs.clear();
         sRentals.clear(); sRaces.clear(); sRaceByManager.clear(); sRaceObjectEntries.clear(); sSeeds.clear(); sStages.clear(); sExplore.clear();
         if (QueryResult r = WorldDatabase.Query("SELECT `CreatureEntry`, `SpellID`, `Cost` FROM `mod_temucraft_lostlands_rental`"))
@@ -152,6 +155,7 @@ namespace LostLands
                 sTokenBuffs[f[0].Get<uint32>()].push_back({ f[1].Get<std::string>(), f[2].Get<uint32>(), f[3].Get<uint32>(), f[4].Get<uint32>() });
             } while (r->NextRow());
 
+        CreateRaceRuns();
         LOG_INFO("module", "mod-temucraft-lostlands scripts: {} rental mounts, {} races, {} seeds, {} garden stages, {} exploration objects",
             sRentals.size(), sRaces.size(), sSeeds.size(), sStages.size(), sExplore.size());
     }
@@ -167,7 +171,21 @@ namespace LostLands
         std::vector<ObjectGuid> spawned;   // summoned creatures and objects to clean up
         std::set<std::pair<ObjectGuid, ObjectGuid>> usedBoosts;
     };
+    // One entry per race, created by Load() on the world thread (CreateRaceRuns); map threads (race managers' AI, on
+    // several Lost Lands maps at once) only find their own entry and never insert into the map.
     std::map<uint32, RaceRun> sRuns;
+
+    void CreateRaceRuns()
+    {
+        for (auto const& kv : sRaces)
+            sRuns[kv.first];   // keeps a run in progress across a reload
+    }
+
+    RaceRun* RunOf(uint32 race)
+    {
+        auto itr = sRuns.find(race);
+        return itr == sRuns.end() ? nullptr : &itr->second;
+    }
 
     void PlayersNear(WorldObject* obj, std::list<Player*>& out, float range)
     {
@@ -410,9 +428,10 @@ struct npc_temucraft_lostlands_race_managerAI : public ScriptedAI
         uint32 elapsed = 250 + (checkTimer > diff ? 0 : diff - checkTimer);
         checkTimer = 250;
         Race const* race = GetRace();
-        if (!race)
+        RaceRun* runPtr = race ? RunOf(race->id) : nullptr;
+        if (!runPtr)
             return;
-        RaceRun& run = sRuns[race->id];
+        RaceRun& run = *runPtr;
 
         if (!run.running)
         {
@@ -521,9 +540,9 @@ public:
         ClearGossipMenuFor(player);
         if (creature->IsQuestGiver())
             player->PrepareQuestMenu(creature->GetGUID());
-        if (Race const* race = RaceOf(creature))
+        if (Race const* race = RaceOf(creature); race && RunOf(race->id))
         {
-            RaceRun& run = sRuns[race->id];
+            RaceRun& run = *RunOf(race->id);
             if (run.queue.count(player->GetGUID()))
                 AddGossipItemFor(player, GOSSIP_ICON_CHAT, TemucraftModuleText("mod-temucraft-lostlands", player, 7, "I want to leave the race queue."), GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
             else if (!run.running && !Queued(player))
@@ -542,9 +561,11 @@ public:
     {
         CloseGossipMenuFor(player);
         Race const* race = RaceOf(creature);
-        if (!race)
+        RaceRun* runPtr = race ? RunOf(race->id) : nullptr;
+        if (!runPtr)
             return true;
-        RaceRun& run = sRuns[race->id];
+        RaceRun& run = *runPtr;
+
         if (action == GOSSIP_ACTION_INFO_DEF + 3)
             run.queue.erase(player->GetGUID());
         else if (!run.running)
