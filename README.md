@@ -160,3 +160,9 @@ were packed with `tools/sqlpack.py`: same rows, about a third smaller. It merges
 their table default (`tools/sql_defaults.json`, from the core's schema) and writes `@VAR+number` columns as numbers
 through a temporary table, then adds the variable. To pack an edited file again:
 `python3 tools/sqlpack.py tools/sql_defaults.json in.sql out.sql`.
+
+## Shared headers
+
+`TemucraftPlayerSettings.h`, `TemucraftModuleText.h` and `TemucraftLocked.h` in `src/` are shared with other Temucraft modules and must stay the same everywhere (all modules
+share one include path). `_tools\check_shared_headers.py` checks the copies (`--fix` copies the canonical one over
+them). The canonical `TemucraftPlayerSettings.h` is in mod-temucraft-player-settings, `TemucraftModuleText.h` is in mod-temucraft, `TemucraftLocked.h` is in mod-temucraft-classes. Change the canonical copy, then run the check with `--fix`.
