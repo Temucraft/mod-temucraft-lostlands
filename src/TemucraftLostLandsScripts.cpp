@@ -19,6 +19,7 @@
 
 #include "CellImpl.h"
 #include "TemucraftModuleText.h"
+#include "TemucraftPlayerSettings.h"
 #include "Chat.h"
 #include "CreatureScript.h"
 #include "GridNotifiers.h"
@@ -769,6 +770,20 @@ public:
 // ====================================================================== teleporters and token vendors
 class npc_temucraft_lostlands_teleporter : public CreatureScript
 {
+    // "Take me to the arena!" -> "the arena" for the "Teleport to: " popup
+    static std::string Where(std::string text)
+    {
+        for (char const* prefix : { "Take me to ", "Teleport me to ", "Teleport to " })
+            if (text.rfind(prefix, 0) == 0)
+            {
+                text = text.substr(std::string(prefix).size());
+                break;
+            }
+        while (!text.empty() && (text.back() == '!' || text.back() == '.'))
+            text.pop_back();
+        return text;
+    }
+
 public:
     npc_temucraft_lostlands_teleporter() : CreatureScript("npc_temucraft_lostlands_teleporter") { }
 
@@ -781,7 +796,8 @@ public:
         if (itr != sTeleports.end())
             for (uint32 i = 0; i < itr->second.size(); ++i)
                 if (!itr->second[i].quest || player->GetQuestRewardStatus(itr->second[i].quest))
-                    AddGossipItemFor(player, GOSSIP_ICON_TAXI, itr->second[i].text, GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + i);
+                    AddGossipItemFor(player, GOSSIP_ICON_TAXI, itr->second[i].text, GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + i,
+                        TemucraftTeleportBox(player, Where(itr->second[i].text)), 0, false);   // "Teleport to: ..." unless turned off
         SendGossipMenuFor(player, player->GetGossipTextId(creature), creature->GetGUID());
         return true;
     }

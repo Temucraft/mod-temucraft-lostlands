@@ -79,7 +79,7 @@ Script names are set in the SQL; the data each script uses is in its own table (
 | `npc_temucraft_lostlands_race_manager` | Daisy (stock 4507), Dolores | **Mirage Raceway**: sign up for your quest's team, countdown, racecars, 28 checkpoints, speed boosts and exploding sheep on the track, quest credit for finishing and an extra quest for the winner | `mod_temucraft_lostlands_race`, `_race_checkpoint`, `_race_pool` |
 | `npc_temucraft_lostlands_race_sheep` | the track's sheep | Slows the racer that runs into it, then explodes | |
 | `npc_temucraft_lostlands_rental` | 11 mounts (some stock: rams 4710/4779, kodos 12354/12355) | Rent the mount for 50 copper | `mod_temucraft_lostlands_rental` |
-| `npc_temucraft_lostlands_teleporter` | the arena ambassadors | Takes you to the Gurubashi Arena | `mod_temucraft_lostlands_teleporter` |
+| `npc_temucraft_lostlands_teleporter` | the arena ambassadors | Takes you to the Gurubashi Arena (asks "Teleport to: the arena" first unless the player turned prompts off, `TemucraftPlayerSettings.h`) | `mod_temucraft_lostlands_teleporter` |
 | `npc_temucraft_lostlands_token_vendor` | the arena's coin vendor | Buffs for Bloody Coins | `mod_temucraft_lostlands_token_vendor` |
 | `npc_training_dummy` (AzerothCore's) | 4 training dummies | Never dies, never fights back | |
 | `go_temucraft_lostlands_rest` | survival tents, the Bright Campfire (stock 31511) | Rested experience builds while you stand close (`Temucraft.LostLands.RestRadius`, `RestRate`) | |
